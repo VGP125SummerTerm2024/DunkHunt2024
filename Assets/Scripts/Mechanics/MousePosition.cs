@@ -6,7 +6,7 @@ public class MousePosition : MonoBehaviour
 {
     [SerializeField] private Camera mainCamera;
     [SerializeField] public int ammo = 3;
-
+    bool _clicking;
     private void Start()
     {
         if (mainCamera == null)
@@ -29,21 +29,20 @@ public class MousePosition : MonoBehaviour
         {
             if (ammo > 0)
             {
-                Debug.Log("Miss!");
+                Debug.Log("Ammo used!");
                 ammo--;
             } else
             {
                 Debug.Log("Out of Ammo!");
             }
         }
-   
 
     }
 
     //Checks if player collides with a duck.
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
             ammo--;
 
