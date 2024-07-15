@@ -6,6 +6,14 @@ public class MousePosition : MonoBehaviour
 {
     [SerializeField] private Camera mainCamera;
     [SerializeField] public int ammo = 3;
+
+    private void Start()
+    {
+        if (mainCamera == null)
+        {
+            Debug.Log("No camera has bee set for the mouse!");
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -33,7 +41,7 @@ public class MousePosition : MonoBehaviour
     }
 
     //Checks if player collides with a duck.
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         if (Input.GetMouseButtonDown(0))
         {
