@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro; // Ensure this is included if using TextMeshPro
+using TMPro;
 
 public class DuckHit : MonoBehaviour
 {
@@ -13,8 +13,8 @@ public class DuckHit : MonoBehaviour
     private int ducksProcessed; // Counter for processed ducks
     private bool isGameOver;
 
-    public TextMeshProUGUI ducksToHitText;  // Reference to the TextMeshProUGUI component
-    public TextMeshProUGUI ducksHitText;    // Reference to the TextMeshProUGUI component
+    public TextMeshProUGUI ducksToHitText; 
+    public TextMeshProUGUI ducksHitText;   
 
     void Start()
     {
