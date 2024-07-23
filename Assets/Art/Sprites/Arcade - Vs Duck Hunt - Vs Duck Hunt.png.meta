@@ -1,0 +1,5430 @@
+fileFormatVersion: 2
+guid: 93905210700021e41bbc5bd374f4d5e1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bullet
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1270
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18a12af52632b2499ead95a24f10f62
+      internalID: 280143929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shot
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 1270
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80596cb225028e438aeec904ea22ec0
+      internalID: 993266290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1270
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4ac7126b27c1b48b935f15835f7492
+      internalID: 1535752503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P1Ready
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 1251
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b872005f0e97146b4131ba9a73cea7
+      internalID: 1242583381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P2Ready
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 1251
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5316a1c1373b064468c78b5ad9134aa8
+      internalID: -1995470159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_5
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1267
+        width: 67
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79ea7b3da95f863469cb30fc601033d1
+      internalID: 217112169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameOver_Transparent
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1253
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b7c09e5dc852344bf87dd29b66fdf4
+      internalID: -1942215613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1P
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1260
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fcb97fd41a01d545ab3f485d5a9ff44
+      internalID: 2083743111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_11
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1260
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5962894598225f04cbc89c77c6f59767
+      internalID: -293050536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_12
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1251
+        width: 171
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e36686926c97d3945acd6e02ca373524
+      internalID: -1995059155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DuckWhite
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1250
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea896b177817dc4aab5504c93be3960
+      internalID: 3415988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DuckRed
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 1250
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b54141fbd6554674e93ab56a2ca27cc2
+      internalID: -1440974970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gun
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 1250
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e2cf276313a65439cc5448ad019407
+      internalID: 224700664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White_0
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1240
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2799cdc94889844abaeb305a366bbc5
+      internalID: 778307631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White_1
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 1240
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 319b2f8a8a6667b4d90b6e20e691360c
+      internalID: -1947260776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White_2
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1240
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994afa1d497407a4eb7556c6b73ce981
+      internalID: 1284619964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White_3
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1240
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d72787a1545a74ba08e294e3afeade
+      internalID: 587908330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1240
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36619986a7c2a4a4d84bc0fc60343c46
+      internalID: -58934078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White_5
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1240
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43dd42ab4bc734d4fa5b9945209f525c
+      internalID: -1085003279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White_6
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1240
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1607552b01e849b439b5c6966e1acd50
+      internalID: -1776952028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White_7
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 1240
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de34b754443b0254fbb459a0ee759fbe
+      internalID: 366952880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White_8
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 1240
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 530f7a5002472c541b7a102c60be80d0
+      internalID: -1158231046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White_9
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1240
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403da84692195394897d63acb445f1ad
+      internalID: 1214061862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_31
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 1239
+        width: 111
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f226e9d2a599074f9affe40b9a198ea
+      internalID: 1099268463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_0
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1230
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e634a8fb378e44f96168c238736978
+      internalID: -303257106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 6
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 1220
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65fbd34d765b03b43871a05f95493120
+      internalID: -23423241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_2
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1230
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60c06e842b07f074191a6a1cb6cdfff9
+      internalID: -411020718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 10
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 1220
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b5cc00455ac9f4da7a77d7da9175e7
+      internalID: -2047004217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1230
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607a2c46da05a3640a3f237a9f773188
+      internalID: 263232002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 1220
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0eca5bb4898eaf4388808e7f162ea12
+      internalID: 1210458358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_6
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1230
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f965903c7b201e49bb688e0978d4091
+      internalID: 1571719453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 18
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1220
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4ffcf5ad8805348a4d2abf4bbefb4a
+      internalID: 596640458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_7
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 1230
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8f491c3a0aa7d4ca2a89d3e00fd585
+      internalID: -1589105784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_9
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1230
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692da3e35dcc30c48b52ef85969d8460
+      internalID: 1838959458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_51
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1230
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe201c5c840ae25499c1910d61ccbb65
+      internalID: 553545064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Green_FlyStraight1
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1188
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc7fc07336bd6941ae6a85b8360de95
+      internalID: -1603904488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Green_FlyStraight2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1188
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a276491b2f5836d45a0eff8c201e25fd
+      internalID: -1629434829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Green_FlyStraight3
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 1188
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c25e354e45fde488cde41fc9d325a4
+      internalID: -466185748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Blue_FlyStraight1
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1188
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491e5627ecdb2de4d931083b538db5c0
+      internalID: 138656102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Blue_FlyStraight2
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 1188
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd694f7e4a545da43863513a705f5886
+      internalID: 1364174133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Blue_FlyStraight3
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 1188
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942efc43cf1c1e44ca9c6b8f4ceb49de
+      internalID: -1588082687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Red_FlyStraight1
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 1188
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f8dcb60c0364443953cfb403a1568e
+      internalID: 1089872513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Red_FlyStraight2
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1188
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe42ea9255ac02b458f4c005e0187e09
+      internalID: 1882055217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Red_FlyStraight3
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1188
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95b12c5a5b5644e4aad4407423406f17
+      internalID: 1841200288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Green_FlyDiagonal1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1152
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5bac78f2fa7cf54e8593b397fe1519e
+      internalID: 868131898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Green_FlyDiagonal2
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 1152
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7fc8f22cef477f48bca027fa838767c
+      internalID: 1586616568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Green_FlyDiagonal3
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 1152
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: def71c56ec5ef9144886fc962f8f3699
+      internalID: -1193845919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Blue_FlyDiagonal1
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1152
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e1e2c4c98e58904d9c1f87f2c4eab25
+      internalID: -1941434516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Blue_FlyDiagonal2
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 1152
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 591431a5e876d434e940994fc3f61504
+      internalID: 94029333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Blue_FlyDiagonal3
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 1152
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b906d2ecc07da46b4a9f4231886baf
+      internalID: -1801777010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Red_FlyDiagonal1
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1154
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df71ccaa5faf8c4f9d8a5e33fa2fa25
+      internalID: -1381140573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Red_FlyDiagonal2
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 1154
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3869ed7acc2faa649b985fad30afd2b2
+      internalID: -1758502947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Red_FlyDiagonal3
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 1152
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e711a401382fd439816d9851ea2d51
+      internalID: -1446758465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level_Main
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1038
+        width: 256
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c135c5849d3bf3543b4f2016d6df33e7
+      internalID: 861678967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Green_FlyUp1
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1117
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dfbbac755b677d42bb31fb80e861e06
+      internalID: 596868473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Green_FlyUp2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1117
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b951d45981fc6e8499d6459e7b83a36d
+      internalID: -108952019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Green_FlyUp3
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 1117
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d366bc539af71e541be0ec73115bd92a
+      internalID: -1477133476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Green_Hit
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1118
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71d5d5419134b4641b86798ffe1bd760
+      internalID: 408556816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Green_Fall1
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 1110
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95aae35cfcb12b740b91dd90eccd5545
+      internalID: 1574055044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Green_Fall2
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1110
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a05ff3a07dc69c4c987f3f46b54044f
+      internalID: 17263728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Green_Fall3
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 1110
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d267c28b8dee5504eb61d16ab84ac701
+      internalID: -1743948404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Blue_FlyUp1
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 1118
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6a80581aed1de498a99842d78931b0
+      internalID: 1758827640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Blue_FlyUp2
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 1117
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 570a2c1d982006c47900f88dc2318120
+      internalID: 1339004271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Blue_FlyUp3
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 1117
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7d1a88a85e5ba4dba42717c1745112
+      internalID: 1065461786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Blue_Hit
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 1118
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b02b2f7445daf7c46870abd65a6f64e4
+      internalID: -1513046048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Blue_Fall1
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 1110
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7628aa46ce85fc44da44393833ad702c
+      internalID: 2090200509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Blue_Fall2
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 1110
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff7fd353d0cc48e499f7178530aff949
+      internalID: -742828176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Blue_Fall3
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 1110
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4241622f85b3d849ab89eaa185c7973
+      internalID: -349524451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Red_FlyUp1
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 1118
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cadc15faaaa36944b2a59c45d61b44c
+      internalID: -911727997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Red_FlyUp2
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1117
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88796bf96fe0e4946803f63e1ea447ce
+      internalID: 1997437921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Red_FlyUp3
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 1117
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d421353a09e6647b1d3fd06d70d7ca
+      internalID: 882732033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Red_Hit
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1118
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a9b3bf2690f5604bb46f878ae2caffb
+      internalID: -898741389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Red_Fall1
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 1110
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f97fccd575896845ae58bc48d67ba08
+      internalID: 1822716785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Red_Fall2
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 1110
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e1d62ba1a1747429f3ba8ddcf94560
+      internalID: 1047182447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Red_Fall3
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 1110
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b32678a0c4928d4f9a7afd44abbf734
+      internalID: 1811401792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Sniff1
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1038
+        width: 55
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6557dd9ac4ef9ea4f87efb1ab95e0245
+      internalID: -2118953670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Sniff2
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1038
+        width: 51
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45795e8dca9e45949b3bf0566b174349
+      internalID: 1973388939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Sniff3
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 1038
+        width: 53
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87519e3afa9a3da41a32de7e75c406da
+      internalID: 2080615989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Sniff4
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 1038
+        width: 52
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eee5b819ec29d034db424bea2433dae3
+      internalID: 1871464771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Sniff5
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 1038
+        width: 55
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfde244aa95e3b74bbea99ce3b9cc433
+      internalID: -844322657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Jump1
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 1054
+        width: 35
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92cd2deb52c885f498248d51f3127028
+      internalID: -460877414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Jump2
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 1058
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc29801b62e9500429bed06871751eda
+      internalID: -1456745792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Holding2Ducks
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 1040
+        width: 54
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 534f1ff1d1629904d9dd01827e1889ca
+      internalID: -1261719734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Laugh1
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 1040
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09abb8029442e56428388cc16a32784c
+      internalID: 1463898557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Laugh2
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 1040
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d09e4297986be9d43921002bbdf2269f
+      internalID: -1239632564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_102
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1038
+        width: 53
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12529dbe27d3ce44ebcc56998aea229a
+      internalID: -615568095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Holding1Duck
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 1040
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5bcb04c4f382c428df2e1420bf9d8c
+      internalID: 321765656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_104
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 1040
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 588288b69474e054590d00f1187bdced
+      internalID: -387163432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Sitting
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 1038
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7700649c5a873a746b73da88dfb0ea5a
+      internalID: -71319395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level_Overview
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 782
+        width: 256
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab0b784959deac4d8d4b0e3c4c093ca
+      internalID: -2132177469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_107
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1014
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa54cf5da44f2c498eea3efe910a232
+      internalID: 1346603599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_108
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 1014
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6597987e5a2a94facdc98ac2b68260
+      internalID: 1061509892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_109
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1014
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bda068de067e5340a3b4bc5110c6b70
+      internalID: 107753776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_110
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 995
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f79beae254ffd941b136ca8d9e7f15e
+      internalID: 1513618105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_111
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 995
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c1de92a784e4b54abcec33cf346984f
+      internalID: -1170597843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_112
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1011
+        width: 67
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe786c53f5e7c74d9ee6c472b718678
+      internalID: 53844962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameOver_BlueBG
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 995
+        width: 35
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 738573ae3159d2241bd08a71e0130196
+      internalID: 1503678907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_120
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1004
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47095aee87ceab468518716b3fd6b40
+      internalID: -547348136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_121
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1004
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b8d51539581973469399c4cbb13df9e
+      internalID: -673063880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_122
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 995
+        width: 171
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c36f1809aa5c94f9d6826b25947e97
+      internalID: -374816288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_123
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 994
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a25914ed16a804a969fab1413fbd63
+      internalID: 1564876356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_124
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 994
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16b8b57abe70ad64c8765c82bad4aee6
+      internalID: 1025126897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_125
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 994
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df049a57ccbbb484588938683e1919e7
+      internalID: -63323545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_126
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 984
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eabb02fe79585b4e82ce390a03ed94a
+      internalID: 130337189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_127
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 984
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5a7610ae561ba4791dd84fd7d4df0c
+      internalID: 1205343926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_128
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 984
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 576c565ba8c841c468411c7e88d90a41
+      internalID: 1529157485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_129
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 984
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4465ece1e45a1643943bd680fb59e10
+      internalID: -95089294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_130
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 984
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 585be2894c16fb3488b9a2215660d0f5
+      internalID: 945700048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_131
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 984
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29fddff8aef610247bd65a10e6070f15
+      internalID: -1798408667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_132
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 984
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d7c9b76a2f08942b6c4f7e67f52143
+      internalID: 351317550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_133
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 984
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8feeb13bf323857409ed514b9d8ace27
+      internalID: -299096778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_134
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 984
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49ddf1323202b3d4dbe835413f9b1e67
+      internalID: -1618484355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_135
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 984
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c33d504935ebb4290a6205fec3c75f
+      internalID: -320730179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_136
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 974
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 736286f168cdd3c43a4365084dc06dfe
+      internalID: 15141398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_137
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 974
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1036b061f3ad2094eaff35dd3a9b5206
+      internalID: 2135749367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_138
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 974
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63405bcc8adf7354fbb2fa014064cacc
+      internalID: 1803791017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_139
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 974
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e53ef00db181104caed56144c9d7b5f
+      internalID: -105373553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_140
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 974
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 248706769a5edd74e84b017f553bf46b
+      internalID: 55157328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_141
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 974
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d0abd68de86fef4696bef4d5ec066c9
+      internalID: -1274453109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_142
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 974
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 648aa39e661598242935b70d75c4f3d9
+      internalID: 2127701701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_143
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 974
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb0186ca89c4d584d973282a404fea72
+      internalID: 1295618574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_144
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 974
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0fae1ecb93670f4ab1c9b3367742d78
+      internalID: -704736223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_145
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 974
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca58e3807725ef479c3dba8712d3a14
+      internalID: 836803031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_146
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 964
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98bd1d06c5b7ae643bb0c068ced7355c
+      internalID: -1734964478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_147
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 964
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3460ea0b5f74a54ea7f688c2c81b2a8
+      internalID: 322630950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_148
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 964
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a314f29829cd1724fa5b4d5e41b0eca0
+      internalID: 719084183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_149
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 964
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a3d421b4b416644af50f9fce3fe9cc
+      internalID: 723883704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_150
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 964
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc9f0f9d8451ef4a8a2e852fec885e6
+      internalID: 26238768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_151
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 964
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12bf4f2205198c14aadb7d4218303fca
+      internalID: 884678870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_152
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 964
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68da3140a6cbe1849902f699bd44b085
+      internalID: 1196639026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_153
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 964
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bdfb7902c431e447ad86cdc8db686d5
+      internalID: 2139615720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_154
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 964
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c10e3d34ea89b47a58de0c49ddec6f
+      internalID: 1294972829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud_Small1
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 940
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 689936d176a7d664b9ece79277af5b86
+      internalID: 776797249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud_Small2
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 940
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 802c4414edaa54a4f9da7786f3d7d871
+      internalID: -2006751854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud_Small13
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 950
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70590af8a588fbb4bba36b03b4729391
+      internalID: -2098693003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud_Small16
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 950
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2afc5e071918adb4f8aede7326401acc
+      internalID: -822996414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud_Small17
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 950
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f85e12e48ddf64491dbae33f74c7a7
+      internalID: -1195235647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 835
+        width: 69
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a89c2f30c78448540875c680fc36017a
+      internalID: 942693985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud_Small3
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 940
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd4e747a6b39b542a4350beff6e13f0
+      internalID: -1083440335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud_Small4
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 940
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab58befb593b98749bf8f3fecb680079
+      internalID: -2034181594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud_Small5
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 940
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f6d92f00912164ea36ed84ef14832f
+      internalID: 788688474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud_Small6
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 940
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f2234ebbe0c474691b5a714eaaf1fb
+      internalID: 156274172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud_Small7
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 940
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a73dd5926f88746ab54ebf353db19d
+      internalID: -529156046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud_Small8
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 940
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a6251efb584c44a84bf0c4c09bd784
+      internalID: 303244837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud_Small9
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 940
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363373510d9e9ae4f8a9f4d4f5dd2538
+      internalID: -1067309749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud_Small10
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 940
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2319201b3d7bd55429436f065108479e
+      internalID: 95335742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud_Small11
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 940
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268d5a5575c1870459adcae0c984a3f8
+      internalID: 2000982704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud_Small12
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 940
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8555bcbf6f990064ab9e98a80aab03df
+      internalID: -2117144388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud_Small14
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 940
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc7beca63267b948ba9d4fa2590a789
+      internalID: 1196135192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud_Small15
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 940
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72279cfe540dc204bbfe211018bd18b6
+      internalID: -1120875528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3ShotLimit
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 921
+        width: 115
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 454c37f4475c7cb4fbf79af552b031a9
+      internalID: 466701350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_174
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 871
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe6bddeef06e1654ea703b6505420312
+      internalID: 2035292858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_175
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 871
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a2428f13e74d3043843aa83cb1ef39e
+      internalID: 422266711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud_Puff_1
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 880
+        width: 39
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7e83875dd6c98448e4fdd784cf726c
+      internalID: -1426649440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud_Puff_2
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 861
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7a974b7e1e3154a9ae8d09746ee62a
+      internalID: 1487362710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 841
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1e0cc4cd45f434b98e889d533cbe2e
+      internalID: -1468134612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud_Puff_3
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 839
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756359bcb87b15742aea989d59676c6a
+      internalID: 1651741135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bonus
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 759
+        width: 30
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081cc8b97bcc7cd42b402a23e6992d35
+      internalID: -1230362805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pts
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 759
+        width: 22
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fbcd453d2c3c5e4081c4d0b0ec7de8a
+      internalID: -1836483472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BonusRound
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 739
+        width: 43
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1cc4eadb8225b438e1f1001c51ae89
+      internalID: -452584650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player1
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 755
+        width: 67
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 161ffd97a63ed8a4caacdf0644a3be3f
+      internalID: -1969548593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_194
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 741
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aecca05e24e70148845683b30b6deb4
+      internalID: 1142861408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player2
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 742
+        width: 67
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be3196c4fe5124438de07ae7134c63f
+      internalID: 208016986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Baby_Shake1
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 702
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36e17cb9b94787479865437f763fc0d
+      internalID: -1261448908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Baby_Shake3
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 696
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6c7cc2b163f914aa3e5f802b2b2bae
+      internalID: 178620553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Baby_Shake5
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 690
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10e4f72d1145124a98b7f36285d14b0
+      internalID: -1378579916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Baby_1
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 702
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ee0a31e4adc0641a4154c13b8405e0
+      internalID: -1107106122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Baby_3
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 702
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 234769a01c5d30a479b849b692b2939f
+      internalID: -1618845999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Baby_5
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 702
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3202508050abf8345a30a1637f6339de
+      internalID: -173846908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Baby_Shake2
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 658
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5dbfcfde6a1e874dacae51f4de86405
+      internalID: 1549952858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Baby_Shake4
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 652
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc8d776b6b1b4ff4bab7fc18acfcbfab
+      internalID: -1918790276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Baby_2
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 658
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f1a8268cdb4b54fab5c3052430503c
+      internalID: -622122058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Baby_4
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 658
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36887efc87907e0468396a26f0dc67a1
+      internalID: -278325506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Baby_6
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 658
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a20c633ca6958643b2e6211a137266d
+      internalID: 1287189941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_251
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 630
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1de60d60d1dd94da559f862fc9e504
+      internalID: -166010237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_252
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 630
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dffdfa536e1fb0d4398d69abe23a9e21
+      internalID: -1726594802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_253
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 630
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1099ca5dc07aac4da315482f8c5affc
+      internalID: -896559703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_254
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 630
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceddd620d468c474aaf078c0bc65a61e
+      internalID: 957001888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_255
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 630
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5643ecdcda36143a86f694fdc5d6c0
+      internalID: 1536257592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level_GrassOnly
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 526
+        width: 256
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 652a36acabe2c064faa66ce73f7518c6
+      internalID: 424265868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Jump
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 578
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd02167bcefcdd142b817b349e363c30
+      internalID: 29471432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_258
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 578
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7a76628dabe454fb76d1d0e364976a
+      internalID: -1767906720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Jump3
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 578
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46cf935be6b8b0d4d943d3b184ab85d5
+      internalID: 1980170795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_JumpAirtime1
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 586
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91bffae79623e4a4d827235d6eccf40e
+      internalID: -853317093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_JumpAirtime2
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 586
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae799777296792847adeeba5a06a457c
+      internalID: 765300385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_JumpAirtimeShot1
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 586
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a254f96b055694b9e6c79392d2d672
+      internalID: 286281130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_JumpAirtimeShot2
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 586
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7b0c31f00b0884fa046e8ecee6837c
+      internalID: 136434876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_JumpAirtimeShot3
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 586
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22c1e7baafb26a9459e125c064c1cd6e
+      internalID: 1388534295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_270
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 602
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcff9f6aea9f4f345aa54fcddd162e5c
+      internalID: 196138997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_278
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 606
+        width: 63
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7116056e19c8f4c9df1f978b88c788
+      internalID: -1013015823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Run1
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 526
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0746feccb5338ef4a950af02ed81a6ec
+      internalID: 1522076207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Run2
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 526
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf20ce910bf6e44c8e98ed8b563333f
+      internalID: -1070914027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Run3
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 526
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baec3d25d2161a241b41370ec0dee71c
+      internalID: -1332121821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Run4
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 526
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e3b4f9899180244addb1008d605060
+      internalID: -1476175029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Clap1
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 526
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f229c0861d0944bb667609052f4b7a
+      internalID: -917608347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Clap2
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 526
+        width: 21
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8680cc282bd98d040b8916e004dddc1e
+      internalID: -629519526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Injured_Walk1
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 526
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455f47e8839d1374f9325e679c8cc7d9
+      internalID: -1562714882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Injured_Walk2
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 526
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f777fecad46a15848a1b0da8ed702887
+      internalID: -2086514584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Injured_Walk3
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 526
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd9ca8037fc38b4c90d97a97e72971e
+      internalID: -1897788397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Injured_Walk4
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 526
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42889ae8083d9245aa06824fe65d9d6
+      internalID: 2018871252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Injured_Stare
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 526
+        width: 16
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39a9b6dad16e2042b557da84a8c5e3d
+      internalID: -517111947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Injured_Crutch1
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 526
+        width: 25
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955ceedbb574768459267a2a2dde925f
+      internalID: -2032914843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Injured_Crutch2
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 526
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 897d64cfc8bd46044943466fb3b261d1
+      internalID: -1433790389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Injured_Crutch3
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 526
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3c8453b50ab6c4693f74ed52c2c5d2
+      internalID: -856784870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Injured_Crutch4
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 526
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a90d49662f722f4b9ecfd4c11048f80
+      internalID: 1753952518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Injured_Crutch5
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 526
+        width: 25
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26270d721d8eee249a9ca6352b8dedae
+      internalID: -1188907012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Injured_Crutch6
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 526
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a27f07cb640ce4c4e9dd42c6ae0de074
+      internalID: -913184536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_Injured_Crutch7
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 526
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df52343c869cee4e92f09566d816817
+      internalID: 501350843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_351
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 397
+        width: 70
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933c4e4804c2af64bb8c317b64200c64
+      internalID: -433788844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level_BreakTime
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 270
+        width: 256
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f4a774c41a7eb43b7e0d84fd9b6bfa
+      internalID: 461748324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu_SelectGame
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 14
+        width: 256
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b94a842f0c8f374cb584ec1ad0671d5
+      internalID: -1085285583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu_NameRegistration
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 14
+        width: 256
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff53d6716160f8a4d868bb412b0ef419
+      internalID: -476722034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_355
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 14
+        width: 256
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b0b810fc0f668e43a7652f8a35b7efa
+      internalID: 605441860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu_Start
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 14
+        width: 256
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ae9b170fbe25a4794bb85cbeb090e4
+      internalID: -2147006344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 1220
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e264756e8d357b444acb3d2ea99fd5e2
+      internalID: 829946352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 12
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 1220
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80af0411c1e965d408ebbb65c8bc0bec
+      internalID: -1648824424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1220
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7692fa18da25df4294e23f4472295e7
+      internalID: -476039443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1220
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b794fcb878d7e144eb6163c9f04e86e7
+      internalID: -1069575135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 00
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 1220
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c2eaaf4452423842ad742eff673457b
+      internalID: 922957343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck_Baby_Shake6
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 646
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da87ed9f067994c48acef37570b7562c
+      internalID: -795792482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_38
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 590
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d69815aa0879474ab5811b6fcf0a61d
+      internalID: 2034282090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_39
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 590
+        width: 199
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 560dee8727b994f46990d0dd0f181754
+      internalID: 872110429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_40
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 758
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e621db5a89e1bce41b6b715a6ca2c044
+      internalID: -719482799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_52
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 758
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83dbe2cf8dfd4b147ad50683b001d0a4
+      internalID: 677993456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_53
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 758
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3adba140ffde081449900ca5f2223fae
+      internalID: -1632791821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_54
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 758
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d928553c4a488624fab62836cf62bb8b
+      internalID: 167699682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_55
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 758
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad01e1e04545a3c4ea0a709884055551
+      internalID: -700832792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_56
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 758
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa59e5fbdd562c44aac03ee9ae559b3d
+      internalID: -719113489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_57
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 758
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9639b347306cc494db24b2e3a569ba15
+      internalID: -1045802019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_58
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 758
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca769d16035435419a8d1678e9d46a1
+      internalID: 1732156664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_59
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 758
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 053f6b5f77bd7a94caf2a3132fd64a2f
+      internalID: 1877853785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 1230
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6efdfdbb66af2449b45216f28888888
+      internalID: 146794078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_3
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1230
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0204ba11198a743a1bdf79d0c25885
+      internalID: -622431784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_5
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1230
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63211a0a60c959a4e82ff884fb5684cb
+      internalID: 1235568225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_8
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 1230
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5181aeabf67b5d468dbfff8963075f7
+      internalID: -107254817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      00: 922957343
+      10: -2047004217
+      12: -1648824424
+      14: 1210458358
+      16: -476039443
+      18: 596640458
+      1P: 2083743111
+      20: -1069575135
+      3ShotLimit: 466701350
+      6: -23423241
+      8: 829946352
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_102: -615568095
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_104: -387163432
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_107: 1346603599
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_108: 1061509892
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_109: 107753776
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_11: -293050536
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_110: 1513618105
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_111: -1170597843
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_112: 53844962
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_114: -741834224
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_115: -110019825
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_116: 1113263745
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_117: -1010379914
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_118: -606074556
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_119: -778008594
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_12: -1995059155
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_120: -547348136
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_121: -673063880
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_122: -374816288
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_123: 1564876356
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_124: 1025126897
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_125: -63323545
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_126: 130337189
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_127: 1205343926
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_128: 1529157485
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_129: -95089294
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_13: -1067925278
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_130: 945700048
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_131: -1798408667
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_132: 351317550
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_133: -299096778
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_134: -1618484355
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_135: -320730179
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_136: 15141398
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_137: 2135749367
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_138: 1803791017
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_139: -105373553
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_140: 55157328
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_141: -1274453109
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_142: 2127701701
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_143: 1295618574
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_144: -704736223
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_145: 836803031
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_146: -1734964478
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_147: 322630950
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_148: 719084183
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_149: 723883704
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_150: 26238768
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_151: 884678870
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_152: 1196639026
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_153: 2139615720
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_154: 1294972829
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_17: 1947021214
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_174: 2035292858
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_175: 422266711
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_18: -35105220
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_180: 220964004
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_181: -467883395
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_182: -1294164074
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_183: 615960919
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_185: 283162497
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_186: 395565731
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_187: 2119865348
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_188: -1578919773
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_19: -2059326234
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_190: 943316649
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_191: -1634090635
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_194: 1142861408
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_195: -84860688
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_196: 110589609
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_197: -883373647
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_198: -920854247
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_199: 1365969415
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_20: -1839645968
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_200: 708064634
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_201: 942643774
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_202: -1354334637
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_203: 1853881973
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_204: -2020913186
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_205: 1969614951
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_206: -456066724
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_207: 1106489319
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_209: -1396796150
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_210: -1557305721
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_211: -1991294254
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_212: 1423854129
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_213: 1345410071
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_214: -935712009
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_215: 621731772
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_216: -1009526673
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_217: 1087831421
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_218: 1016488024
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_219: -153840529
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_220: 1583698171
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_221: 2084491901
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_222: 312459121
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_224: 1466928302
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_226: 737873487
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_227: -254771462
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_229: -39428673
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_233: -1249579385
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_234: 550375575
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_235: -904420651
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_236: -1782162534
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_238: -128019823
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_240: -2111746982
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_241: 910263107
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_242: 469804156
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_243: 137186418
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_247: -269164141
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_248: 1264364196
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_249: -450926754
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_250: -1760487346
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_251: -166010237
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_252: -1726594802
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_253: -896559703
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_254: 957001888
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_255: 1536257592
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_258: -1767906720
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_265: 2139808254
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_266: -1752768830
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_267: -1073571874
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_268: -821037710
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_269: -1254260473
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_270: 196138997
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_271: -842145418
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_272: -910364971
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_273: 26318819
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_274: 1919835701
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_275: -480675397
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_276: 28481889
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_277: 2142179335
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_278: -1013015823
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_279: -1596004353
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_280: -960469892
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_281: 1672850165
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_282: -548262123
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_283: -372128241
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_284: -712954710
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_285: -193660990
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_286: -1548745254
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_287: 733609717
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_288: 1879440828
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_289: 20682574
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_290: -1732342327
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_291: 1208631828
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_292: -905937042
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_293: -1972303996
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_294: 2038068415
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_295: 2119595031
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_296: -1736326332
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_297: -1614205019
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_31: 1099268463
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_316: 42709342
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_317: -1020856490
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_318: 1824783974
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_319: -350221011
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_320: -342501511
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_321: 2119233871
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_322: 1601303564
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_323: 1371941975
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_324: -1154913035
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_325: -1407120906
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_326: -1532064500
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_327: 1852407920
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_328: -1249399614
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_329: 733606967
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_330: -370889333
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_331: -1814219775
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_332: -320350242
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_333: -1212238449
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_334: -1992636616
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_335: 1436128014
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_336: 1084334359
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_337: -1992985031
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_338: 748600902
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_339: 455851576
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_340: 436267951
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_341: 923570311
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_342: -116329295
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_343: -2096178616
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_344: -719410891
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_345: -1676404632
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_346: 136480310
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_347: -570526295
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_348: -1135766653
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_349: -1901944718
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_350: -2082783002
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_351: -433788844
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_355: 605441860
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_38: 2034282090
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_39: 872110429
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_40: -719482799
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_5: 217112169
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_51: 553545064
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_52: 677993456
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_53: -1632791821
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_54: 167699682
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_55: -700832792
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_56: -719113489
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_57: -1045802019
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_58: 1732156664
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_59: 1877853785
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_8: 1903386964
+      Arcade - Vs Duck Hunt - Vs Duck Hunt_9: -856115064
+      Bonus: -1230362805
+      BonusRound: -452584650
+      Bullet: 280143929
+      Bush: -1468134612
+      Cloud_Puff_1: -1426649440
+      Cloud_Puff_2: 1487362710
+      Cloud_Puff_3: 1651741135
+      Cloud_Small1: 776797249
+      Cloud_Small10: 95335742
+      Cloud_Small11: 2000982704
+      Cloud_Small12: -2117144388
+      Cloud_Small13: -2098693003
+      Cloud_Small14: 1196135192
+      Cloud_Small15: -1120875528
+      Cloud_Small16: -822996414
+      Cloud_Small17: -1195235647
+      Cloud_Small2: -2006751854
+      Cloud_Small3: -1083440335
+      Cloud_Small4: -2034181594
+      Cloud_Small5: 788688474
+      Cloud_Small6: 156274172
+      Cloud_Small7: -529156046
+      Cloud_Small8: 303244837
+      Cloud_Small9: -1067309749
+      Dog_Clap1: -917608347
+      Dog_Clap2: -629519526
+      Dog_Holding1Duck: 321765656
+      Dog_Holding2Ducks: -1261719734
+      Dog_Injured_Crutch1: -2032914843
+      Dog_Injured_Crutch2: -1433790389
+      Dog_Injured_Crutch3: -856784870
+      Dog_Injured_Crutch4: 1753952518
+      Dog_Injured_Crutch5: -1188907012
+      Dog_Injured_Crutch6: -913184536
+      Dog_Injured_Crutch7: 501350843
+      Dog_Injured_Stare: -517111947
+      Dog_Injured_Walk1: -1562714882
+      Dog_Injured_Walk2: -2086514584
+      Dog_Injured_Walk3: -1897788397
+      Dog_Injured_Walk4: 2018871252
+      Dog_Jump: 29471432
+      Dog_Jump1: -460877414
+      Dog_Jump2: -1456745792
+      Dog_Jump3: 1980170795
+      Dog_JumpAirtime1: -853317093
+      Dog_JumpAirtime2: 765300385
+      Dog_JumpAirtimeShot1: 286281130
+      Dog_JumpAirtimeShot2: 136434876
+      Dog_JumpAirtimeShot3: 1388534295
+      Dog_Laugh1: 1463898557
+      Dog_Laugh2: -1239632564
+      Dog_Run1: 1522076207
+      Dog_Run2: -1070914027
+      Dog_Run3: -1332121821
+      Dog_Run4: -1476175029
+      Dog_Sniff1: -2118953670
+      Dog_Sniff2: 1973388939
+      Dog_Sniff3: 2080615989
+      Dog_Sniff4: 1871464771
+      Dog_Sniff5: -844322657
+      DuckRed: -1440974970
+      DuckWhite: 3415988
+      Duck_Baby_1: -1107106122
+      Duck_Baby_2: -622122058
+      Duck_Baby_3: -1618845999
+      Duck_Baby_4: -278325506
+      Duck_Baby_5: -173846908
+      Duck_Baby_6: 1287189941
+      Duck_Baby_Shake1: -1261448908
+      Duck_Baby_Shake2: 1549952858
+      Duck_Baby_Shake3: 178620553
+      Duck_Baby_Shake4: -1918790276
+      Duck_Baby_Shake5: -1378579916
+      Duck_Baby_Shake6: -795792482
+      Duck_Blue_Fall1: 2090200509
+      Duck_Blue_Fall2: -742828176
+      Duck_Blue_Fall3: -349524451
+      Duck_Blue_FlyDiagonal1: -1941434516
+      Duck_Blue_FlyDiagonal2: 94029333
+      Duck_Blue_FlyDiagonal3: -1801777010
+      Duck_Blue_FlyStraight1: 138656102
+      Duck_Blue_FlyStraight2: 1364174133
+      Duck_Blue_FlyStraight3: -1588082687
+      Duck_Blue_FlyUp1: 1758827640
+      Duck_Blue_FlyUp2: 1339004271
+      Duck_Blue_FlyUp3: 1065461786
+      Duck_Blue_Hit: -1513046048
+      Duck_Green_Fall1: 1574055044
+      Duck_Green_Fall2: 17263728
+      Duck_Green_Fall3: -1743948404
+      Duck_Green_FlyDiagonal1: 868131898
+      Duck_Green_FlyDiagonal2: 1586616568
+      Duck_Green_FlyDiagonal3: -1193845919
+      Duck_Green_FlyStraight1: -1603904488
+      Duck_Green_FlyStraight2: -1629434829
+      Duck_Green_FlyStraight3: -466185748
+      Duck_Green_FlyUp1: 596868473
+      Duck_Green_FlyUp2: -108952019
+      Duck_Green_FlyUp3: -1477133476
+      Duck_Green_Hit: 408556816
+      Duck_Red_Fall1: 1822716785
+      Duck_Red_Fall2: 1047182447
+      Duck_Red_Fall3: 1811401792
+      Duck_Red_FlyDiagonal1: -1381140573
+      Duck_Red_FlyDiagonal2: -1758502947
+      Duck_Red_FlyDiagonal3: -1446758465
+      Duck_Red_FlyStraight1: 1089872513
+      Duck_Red_FlyStraight2: 1882055217
+      Duck_Red_FlyStraight3: 1841200288
+      Duck_Red_FlyUp1: -911727997
+      Duck_Red_FlyUp2: 1997437921
+      Duck_Red_FlyUp3: 882732033
+      Duck_Red_Hit: -898741389
+      Duck_Sitting: -71319395
+      GameOver_BlueBG: 1503678907
+      GameOver_Transparent: -1942215613
+      Green_: 1610072410
+      Green_0: -303257106
+      Green_2: -411020718
+      Green_3: -622431784
+      Green_4: 263232002
+      Green_5: 1235568225
+      Green_6: 1571719453
+      Green_7: -1589105784
+      Green_8: -107254817
+      Green_9: 1838959458
+      Gun: 224700664
+      Level_BreakTime: 461748324
+      Level_GrassOnly: 424265868
+      Level_Main: 861678967
+      Level_Overview: -2132177469
+      Menu_NameRegistration: -476722034
+      Menu_SelectGame: -1085285583
+      Menu_Start: -2147006344
+      P1Ready: 1242583381
+      P2Ready: -1995470159
+      Player1: -1969548593
+      Player2: 208016986
+      Pts: -1836483472
+      R: 1535752503
+      Shot: 993266290
+      Tree: 942693985
+      White_0: 778307631
+      White_1: -1947260776
+      White_2: 1284619964
+      White_3: 587908330
+      White_4: -58934078
+      White_5: -1085003279
+      White_6: -1776952028
+      White_7: 366952880
+      White_8: -1158231046
+      White_9: 1214061862
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
