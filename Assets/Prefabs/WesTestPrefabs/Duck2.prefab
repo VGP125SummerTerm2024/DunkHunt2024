@@ -123,9 +123,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4374838392500035368}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a7d0a87d8ef5fb40ab23e480650842a, type: 3}
+  m_Script: {fileID: 11500000, guid: 7845fc58af9465544a9d2e4fe9bfd12d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseSpeed: 4000
+  speed: 0
+  isDodgey: 0
+  moveDirection: {x: 0, y: 0}
 --- !u!61 &5633907041740490071
 BoxCollider2D:
   m_ObjectHideFlags: 0

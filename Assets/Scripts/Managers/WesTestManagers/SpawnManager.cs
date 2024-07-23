@@ -12,6 +12,8 @@ public class SpawnManager : MonoBehaviour
 
     public int gameNum;
 
+    public int rndNum;
+
     IEnumerator SpawnDuck2(float waitTime, int spawnPos)
     {
         yield return new WaitForSeconds(waitTime);
@@ -51,9 +53,16 @@ public class SpawnManager : MonoBehaviour
         }
 
         //instantiate the prefabs
-        GameObject Duck1 = Instantiate(DuckPrefabs[Random.Range(0, DuckPrefabs.Length)], SpawnPositions[spawnPos1].position, Quaternion.identity);
+        if (rndNum == 1)
+        {
+            GameObject Duck1 = Instantiate(DuckPrefabs[Random.Range(0, DuckPrefabs.Length - 1)], SpawnPositions[spawnPos1].position, Quaternion.identity);
+        }
+        else
+        {
+            GameObject Duck1 = Instantiate(DuckPrefabs[Random.Range(0, DuckPrefabs.Length)], SpawnPositions[spawnPos1].position, Quaternion.identity);
+        }
+        
 
-        Duck1.GetComponent<Rigidbody2D>().velocity = new Vector2(1, 5);
         if (gameNum == 2)
         {
             StartCoroutine(SpawnDuck2(0.75f, spawnPos2));

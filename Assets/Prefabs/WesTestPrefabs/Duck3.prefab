@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3957810129599141131}
   - component: {fileID: 8058260590135157240}
   - component: {fileID: -5647674510487806837}
-  - component: {fileID: -31964528354095048}
+  - component: {fileID: -5958442290017793874}
   - component: {fileID: -8798418126659133170}
   m_Layer: 0
   m_Name: Duck3
@@ -114,7 +114,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &-31964528354095048
+--- !u!114 &-5958442290017793874
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,9 +123,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2419627602652438796}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a7d0a87d8ef5fb40ab23e480650842a, type: 3}
+  m_Script: {fileID: 11500000, guid: 7845fc58af9465544a9d2e4fe9bfd12d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseSpeed: 4000
+  speed: 0
+  isDodgey: 0
+  moveDirection: {x: 0, y: 0}
 --- !u!61 &-8798418126659133170
 BoxCollider2D:
   m_ObjectHideFlags: 0
