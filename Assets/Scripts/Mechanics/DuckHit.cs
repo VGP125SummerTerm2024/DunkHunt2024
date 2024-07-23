@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class DuckHit : MonoBehaviour
 {
@@ -13,8 +14,9 @@ public class DuckHit : MonoBehaviour
     private int ducksProcessed; // Counter for processed ducks
     private bool isGameOver;
 
-    public TextMeshProUGUI ducksToHitText; 
-    public TextMeshProUGUI ducksHitText;   
+    public TextMeshProUGUI ducksToHitText;
+    public TextMeshProUGUI ducksHitText;
+    public Image[] duckImages; // Array of duck images
 
     void Start()
     {
@@ -32,8 +34,8 @@ public class DuckHit : MonoBehaviour
     {
         if (isGameOver) return;
 
-        // Simulate shooting by pressing space
-        if (Input.GetKeyDown(KeyCode.Space))
+        // Simulate shooting by pressing the left mouse button
+        if (Input.GetMouseButtonDown(0))
         {
             Shoot();
         }
@@ -47,8 +49,6 @@ public class DuckHit : MonoBehaviour
         UpdateUI();
     }
 
-   
-
     private void Shoot()
     {
         if (ducksProcessed < ducksPerLevel)
@@ -58,11 +58,13 @@ public class DuckHit : MonoBehaviour
             {
                 hits++;
                 Debug.Log("Duck hit!");
+                duckImages[ducksProcessed].color = Color.red; // Change color to red
             }
             else
             {
                 ducksMissed++;
                 Debug.Log("Missed!");
+                duckImages[ducksProcessed].color = Color.white; // Keep color white
             }
 
             ducksProcessed++;
@@ -103,5 +105,10 @@ public class DuckHit : MonoBehaviour
     private void UpdateUI()
     {
         ducksToHitText.text = $"Level {level}: Hit {ducksToHit} ducks to advance.";
+        // Reset the duck images colors to default
+        foreach (Image duckImage in duckImages)
+        {
+            duckImage.color = Color.white;
+        }
     }
 }
