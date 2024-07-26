@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bound
+  - JumpTrigger
   layers:
   - Default
   - TransparentFX
@@ -13,7 +14,7 @@ TagManager:
   - Water
   - UI
   - Foreground
-  - 
+  - Player
   - 
   - 
   - 
@@ -45,8 +46,8 @@ TagManager:
   - name: Background
     uniqueID: 3457263131
     locked: 0
-  - name: PlayArea
-    uniqueID: 2774617741
+  - name: Midground
+    uniqueID: 271965421
     locked: 0
   - name: Foreground
     uniqueID: 3800855605
