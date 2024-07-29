@@ -25,29 +25,30 @@ public class DuckScript : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
-        //animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
 
         int leftRight;
         float verticalMovement;
         float horizontalMovement;
 
         if (Random.Range(0, 2) == 0)
+            leftRight = -1;
+        else
         {
             sr.flipX = true;
-            leftRight = -1;
-        }
-        else
             leftRight = 1;
+        }
 
         if (Random.Range(0,2) == 0)
         {
-            verticalMovement = .3f;
-            horizontalMovement = .7f;
+            animator.SetBool("Flip", true);
+            verticalMovement = .4f;
+            horizontalMovement = .6f;
         }
         else
         {
-            verticalMovement = .7f;
-            horizontalMovement = .3f;
+            verticalMovement = .6f;
+            horizontalMovement = .4f;
         }
 
         //Later multiply by round multiplier
@@ -87,6 +88,7 @@ public class DuckScript : MonoBehaviour
         if (rNum == 0)
         {
             Debug.Log("Angle Reversed");
+            animator.SetBool("Flip", !animator.GetBool("Flip"));
             float temp = moveDirection.x;
             if (moveDirection.x < 0 && moveDirection.y < 0 || moveDirection.x > 0 && moveDirection.y > 0)
             {
@@ -103,6 +105,7 @@ public class DuckScript : MonoBehaviour
         if (rNum == 1)
         {
             Debug.Log("Movement reversed");
+            sr.flipX = !sr.flipX;
             moveDirection *= -1;
         }
         else
@@ -112,16 +115,8 @@ public class DuckScript : MonoBehaviour
                 sr.flipX = !sr.flipX;
                 moveDirection.x *= -1;
             }
-            else if (collision.gameObject.name == "TopBound")
+            else if (collision.gameObject.name == "TopBound" || collision.gameObject.name == "BottomBound")
             {
-                //set animation to flying down
-                Debug.Log("Duck flys down");
-                moveDirection.y *= -1;
-            }
-            else if (collision.gameObject.name == "BottomBound")
-            {
-                //set animation to fly up
-                Debug.Log("Duck flys up");
                 moveDirection.y *= -1;
             }
         }
