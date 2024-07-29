@@ -38,7 +38,8 @@ public class AmmoManager : MonoBehaviour
             if (i < currentAmmo)
             {
                 ammoImages[i].enabled = true; // Display bullet
-            } else
+            }
+            else
             {
                 ammoImages[i].enabled = false; // Hide bullet
             }
