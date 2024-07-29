@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     {
         // Initialize high score and game mode
         HighScore = PlayerPrefs.GetInt("HighScore", 0);
-        GameMode = "Classic"; // Default game mode, confirm name
+        //GameMode = "Classic"; // Default game mode, confirm name
     }
 
     // Method to update high score
@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
     }
 
     // Method to switch game modes
-    public void SetGameMode(string mode)
+    public void SetGameMode(int mode)
     {
         if (mode >= 0 && mode <= 3)
         {
