@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 
     // Variables to track high score and game mode
     public int HighScore { get; private set; }
-    public string GameMode { get; private set; }
+    public int GameMode { get; private set; } // 0:Menu 1:OneDuck 2:TwoDuck 3:ClayPigeon
 
     private void Awake()
     {
@@ -41,7 +41,13 @@ public class GameManager : MonoBehaviour
     // Method to switch game modes
     public void SetGameMode(string mode)
     {
-        GameMode = mode;
-        // Additional logic to handle different game modes can be added here
+        if (mode >= 0 && mode <= 3)
+        {
+            GameMode = mode;
+        }
+        else
+        {
+            Debug.LogWarning("Invalid game mode selected.");
+        }
     }
 }
