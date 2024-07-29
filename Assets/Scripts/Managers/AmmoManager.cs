@@ -38,12 +38,12 @@ public class AmmoManager : MonoBehaviour
             if (i < currentAmmo)
             {
                 ammoImages[i].enabled = true; // Display bullet
-        } else
+            } else
             {
-                ammoImages[i] = false; // Hide bullet
+                ammoImages[i].enabled = false; // Hide bullet
             }
+        }
     }
-
     // Method to handle the end of the game
     private void EndGame()
     {
