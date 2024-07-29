@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(Rigidbody2D),typeof(BoxCollider2D), typeof(SpriteRenderer))]
 
-public class EnemyMovement : MonoBehaviour
+public class DuckScript : MonoBehaviour
 {
     Rigidbody2D rb;
     SpriteRenderer sr;
@@ -61,6 +62,15 @@ public class EnemyMovement : MonoBehaviour
     void Update()
     {
         rb.velocity = moveDirection * speed * Time.deltaTime;
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            if (GetComponent<Collider2D>().OverlapPoint(mousePosition))
+            {
+                GetComponent<Rigidbody2D>().velocity = new Vector2(0, -5);
+            }
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
