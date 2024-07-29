@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Bound
   - JumpTrigger
+  - DuckGroundTrigger
   layers:
   - Default
   - TransparentFX
