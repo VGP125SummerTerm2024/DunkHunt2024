@@ -10,7 +10,7 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] public GameObject[] DuckPrefabs;
     [SerializeField] public Transform[] SpawnPositions;
 
-    public int gameNum;
+    public int gameNum = GameManager.Instance.GameMode;
 
     public int rndNum;
 
@@ -39,6 +39,8 @@ public class SpawnManager : MonoBehaviour
         {
             DuckSpawner();
         }
+
+
     }
 
     void DuckSpawner()

@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 
     // Variables to track high score and game mode
     public int HighScore { get; private set; }
-    public string GameMode { get; private set; }
+    public int GameMode { get; private set; }
 
     private void Awake()
     {
@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     {
         // Initialize high score and game mode
         HighScore = PlayerPrefs.GetInt("HighScore", 0);
-        GameMode = "Classic"; // Default game mode, confirm name
+        //GameMode = "Classic"; // Default game mode, confirm name
     }
 
     // Method to update high score
@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
     }
 
     // Method to switch game modes
-    public void SetGameMode(string mode)
+    public void SetGameMode(int mode)
     {
         GameMode = mode;
         // Additional logic to handle different game modes can be added here
