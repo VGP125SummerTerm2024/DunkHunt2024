@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7210721010564391626}
   - component: {fileID: 4709900116878981304}
   - component: {fileID: 3159457254439265953}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Duck_Red
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 136
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -151,7 +151,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 136
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
