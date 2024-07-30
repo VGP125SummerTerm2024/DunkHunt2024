@@ -14,6 +14,8 @@ public class DuckScript : MonoBehaviour
 
     [SerializeField] float baseSpeed = 4000f;
 
+    bool isDead = false;
+
     public float speed;
 
     public bool isDodgey;
@@ -66,18 +68,25 @@ public class DuckScript : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            if (GetComponent<Collider2D>().OverlapPoint(mousePosition))
+            if (GetComponent<Collider2D>().OverlapPoint(mousePosition) && !isDead)
             {
-                GetComponent<Rigidbody2D>().velocity = new Vector2(0, -5);
+                rb.gravityScale = 0;
+                rb.gameObject.layer = LayerMask.NameToLayer("DeadDuck");
+                StartCoroutine(duckHit());
             }
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Bound"))
+        if (collision.gameObject.CompareTag("Bound") && !isDead)
         {
             RandomChangeAngle(collision);
+        }
+        else if (collision.gameObject.CompareTag("DuckGroundTrigger"))
+        {
+            // tell round manager ducks transform location and duck hit
+            Destroy(gameObject);
         }
     }
 
@@ -120,5 +129,15 @@ public class DuckScript : MonoBehaviour
                 moveDirection.y *= -1;
             }
         }
+    }
+
+    IEnumerator duckHit()
+    {
+        // Add duck hit to round manager
+        animator.SetTrigger("DuckHit");
+        isDead = true;
+        moveDirection = new Vector2(0, 0);
+        yield return new WaitForSeconds(.5f);
+        moveDirection = new Vector2(0, -1);
     }
 }
