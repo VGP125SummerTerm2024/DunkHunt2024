@@ -11,6 +11,7 @@ public class DuckScript : MonoBehaviour
     Rigidbody2D rb;
     SpriteRenderer sr;
     Animator animator;
+    AudioSource audioSource;
 
     [SerializeField] float baseSpeed = 4000f;
 
@@ -22,12 +23,17 @@ public class DuckScript : MonoBehaviour
 
     [SerializeField] Vector2 moveDirection;
 
+    public AmmoManager ammoManager;
+    public AudioClip quackSound;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        ammoManager = FindObjectOfType<AmmoManager>();
+        audioSource = GetComponent<AudioSource>();
 
         int leftRight;
         float verticalMovement;
@@ -58,6 +64,8 @@ public class DuckScript : MonoBehaviour
 
         moveDirection = new Vector2(horizontalMovement, verticalMovement);
         moveDirection.x *= leftRight;
+
+
     }
 
     // Update is called once per frame
@@ -74,6 +82,7 @@ public class DuckScript : MonoBehaviour
                 rb.gameObject.layer = LayerMask.NameToLayer("DeadDuck");
                 StartCoroutine(duckHit());
             }
+            ammoManager.UpdateAmmo();
         }
     }
 
@@ -81,6 +90,7 @@ public class DuckScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bound") && !isDead)
         {
+            PlaySoundOnce(quackSound);
             RandomChangeAngle(collision);
         }
         else if (collision.gameObject.CompareTag("DuckGroundTrigger"))
@@ -139,5 +149,12 @@ public class DuckScript : MonoBehaviour
         moveDirection = new Vector2(0, 0);
         yield return new WaitForSeconds(.5f);
         moveDirection = new Vector2(0, -1);
+    }
+
+    private void PlaySoundOnce(AudioClip clip)
+    {
+        audioSource.Stop();
+        audioSource.clip = clip;
+        audioSource.Play();
     }
 }
