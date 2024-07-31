@@ -43,7 +43,7 @@ public class SpawnManager : MonoBehaviour
 
     }
 
-    void DuckSpawner()
+    public void DuckSpawner()
     {
         //Select spawn positions for the ducks and ensure they are different
         int spawnPos1 = Random.Range(0, SpawnPositions.Length);
