@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using static UnityEditor.PlayerSettings;
 
 [RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(Animator))]
@@ -100,6 +101,7 @@ public class DogAI : MonoBehaviour
         float jumpVelocity = Mathf.Sqrt(2 * Mathf.Abs(Physics2D.gravity.y) * jumpHeight);
         rb.velocity = new Vector2(rb.velocity.x, jumpVelocity);
         StartCoroutine(JumpCoroutine());
+        duckMGR.DuckSpawner();
     }
 
     private IEnumerator JumpCoroutine()
@@ -109,9 +111,8 @@ public class DogAI : MonoBehaviour
             yield return null;
         }
         sr.sortingLayerName = backgroundSortingLayer;
-        
+        //duckMGR.DuckSpawner();    
     }
-
     private void DogMove()
     {
         anim.Play("Sniff");
