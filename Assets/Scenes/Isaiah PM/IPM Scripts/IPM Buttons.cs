@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class Buttons : MonoBehaviour
+public class IPMButtons : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -19,14 +19,14 @@ public class Buttons : MonoBehaviour
 
     public void Game1()
     {
-         SceneManager.LoadScene("Example1");
+         SceneManager.LoadScene("IPM Example 1");
     }
     public void Game2()
     {
-         SceneManager.LoadScene("Example2");
+         SceneManager.LoadScene("IPM Example 2");
     }
     public void IsaiahPM() //This is just for development use.
     {
-         SceneManager.LoadScene("Isaiah PM");
+         SceneManager.LoadScene("IPM Main Menu");
     }
 }

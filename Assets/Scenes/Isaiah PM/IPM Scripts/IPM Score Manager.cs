@@ -3,27 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoreManager : MonoBehaviour
+public class IPMScoreManager : MonoBehaviour
 {
     /// <summary>
     /// This is the start of the singleton pattern logic.
     /// </summary>
-    private static ScoreManager instance;
+    private static IPMScoreManager instance;
 
-    public static ScoreManager Instance
+    public static IPMScoreManager Instance
     {
         get
         {
             if (instance == null)
             {
                 // Try to find an existing instance in the scene
-                instance = FindObjectOfType<ScoreManager>();
+                instance = FindObjectOfType<IPMScoreManager>();
 
                 // If no instance is found, create a new one
                 if (instance == null)
                 {
-                    GameObject singleton = new GameObject(typeof(ScoreManager).ToString());
-                    instance = singleton.AddComponent<ScoreManager>();
+                    GameObject singleton = new GameObject(typeof(IPMScoreManager).ToString());
+                    instance = singleton.AddComponent<IPMScoreManager>();
                     DontDestroyOnLoad(singleton);
                 }
             }
@@ -31,12 +31,12 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
-    private ScoreManager() {}
+    private IPMScoreManager() {}
 
     // For testing and confirmation.
     public void DisplayMessage()
     {
-        Debug.Log("Singleton Instance Called for ScoreManager");
+        Debug.Log("Singleton Instance Called for IPMScoreManager");
     }
     /// <summary>
     /// This is the end of the singleton pattern logic.
