@@ -3,18 +3,22 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Bound
+  - Enemy
+  - DuckGroundTrigger
+  - JumpTrigger
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Enemy
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Background
+  - PlayArea
+  - Foreground
+  - DeadDuck
   - 
   - 
   - 
@@ -40,4 +44,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 783046527
+    locked: 0
+  - name: PlayArea
+    uniqueID: 3415269389
+    locked: 0
+  - name: Foreground
+    uniqueID: 3704359135
     locked: 0
