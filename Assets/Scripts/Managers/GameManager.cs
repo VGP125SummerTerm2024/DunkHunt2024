@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -33,8 +34,11 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         // Initialize high score and game mode
-        highScore = PlayerPrefs.GetInt("HighScore", 0);
-        _GameMode = 1; //Set gamemode to default 1 duck mode
+
+        HighScore = PlayerPrefs.GetInt("HighScore", 0);
+        //GameMode = "Classic"; // Default game mode, confirm name
+        LoadMainMenu();
+
     }
 
     // Method to update high score
@@ -53,6 +57,7 @@ public class GameManager : MonoBehaviour
         if (mode >= 0 && mode <= 3)
         {
             GameMode = mode;
+            LoadSceneForGameMode();
         }
         else
         {
@@ -60,13 +65,30 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void pause()
+
+    public void LoadMainMenu()
     {
-        Time.timeScale = 0f;
+        SceneManager.LoadScene("IPM Main Menu");
     }
 
-    public void unPause()
-    {
-        Time.timeScale = 1.0f;
+    //Method to load scenes based on game mode - commenting out, Alexa is working on this
+    //private void LoadSceneForGameMode()
+    //{
+        //switch(GameMode)
+        //{
+           // case 0:
+                //LoadMainMenu();
+               // break;
+           // case 1:
+               // SceneManager.LoadScene("1DuckMode");
+               // break;
+           //case 2:
+                //SceneManager.LoadScene("2DuckMode");
+                //break;
+            //case 3:
+                //SceneManager.LoadScene("ClayPigeonScene");
+                //break;
+       // }
+
     }
 }
