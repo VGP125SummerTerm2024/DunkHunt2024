@@ -3,18 +3,27 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance { get; private set; }
+    static GameManager _Instance;
+    public static GameManager Instance => _Instance;
 
     // Variables to track high score and game mode
-    public int HighScore { get; private set; }
-    public int GameMode { get; private set; } // 0:Menu 1:OneDuck 2:TwoDuck 3:ClayPigeon
+    int highScore;
+
+    public int GameMode // 0:Menu 1:OneDuck 2:TwoDuck 3:ClayPigeon
+    { 
+        get => _GameMode; 
+        set => _GameMode = value;
+    }
+
+    private int _GameMode;
 
     private void Awake()
     {
-        if (Instance == null)
+        if (_Instance == null)
         {
-            Instance = this;
+            _Instance = this;
             DontDestroyOnLoad(gameObject);
+            return;
         }
         else
         {
@@ -25,18 +34,20 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         // Initialize high score and game mode
+
         HighScore = PlayerPrefs.GetInt("HighScore", 0);
         //GameMode = "Classic"; // Default game mode, confirm name
         LoadMainMenu();
+
     }
 
     // Method to update high score
     public void UpdateHighScore(int newScore)
     {
-        if (newScore > HighScore)
+        if (newScore > highScore)
         {
-            HighScore = newScore;
-            PlayerPrefs.SetInt("HighScore", HighScore);
+            highScore = newScore;
+            PlayerPrefs.SetInt("HighScore", highScore);
         }
     }
 
@@ -53,6 +64,7 @@ public class GameManager : MonoBehaviour
             Debug.LogWarning("Invalid game mode selected.");
         }
     }
+
 
     public void LoadMainMenu()
     {
@@ -77,5 +89,6 @@ public class GameManager : MonoBehaviour
                 //SceneManager.LoadScene("ClayPigeonScene");
                 //break;
        // }
+
     }
 }
