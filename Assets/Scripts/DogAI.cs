@@ -72,6 +72,7 @@ public class DogAI : MonoBehaviour
 
     public void DogLaugh()
     {
+        // anim.SetTrigger("laugh") change name to trigger name
         duckHitCount = 0;
         sr.sprite = laughSprite;
         PlaySoundOnce(laugh);
@@ -97,6 +98,7 @@ public class DogAI : MonoBehaviour
 
     private void DogJump()
     {
+        // anim.SetTrigger("Jump") change name to trigger name
         PlaySoundOnce(bark);
         float jumpVelocity = Mathf.Sqrt(2 * Mathf.Abs(Physics2D.gravity.y) * jumpHeight);
         rb.velocity = new Vector2(rb.velocity.x, jumpVelocity);
@@ -110,6 +112,7 @@ public class DogAI : MonoBehaviour
         {
             yield return null;
         }
+        // anim.SetTrigger("jumpChange") change name to trigger name
         sr.sortingLayerName = backgroundSortingLayer;
         //duckMGR.DuckSpawner();    
     }
@@ -144,6 +147,7 @@ public class DogAI : MonoBehaviour
         }
 
         // Ensure the dog has landed
+        // anim.SetTrigger("HoldDuck") change name to trigger name (or idle?)
         rb.gravityScale = initialGravityScale;
         rb.velocity = Vector2.zero;
         transform.position = originalPosition;
@@ -153,6 +157,7 @@ public class DogAI : MonoBehaviour
     {
         // You can implement your own grounded check logic here
         return Mathf.Approximately(rb.velocity.y, 0f);
+        // anim.SetTrigger("HoldDuck") change name to trigger name (or idle?)
     }
 
     private void PlaySoundOnce(AudioClip clip)
@@ -172,6 +177,7 @@ public class DogAI : MonoBehaviour
     {
         if (collision.CompareTag("JumpTrigger"))
         {
+            // anim.SetTrigger("Alert") change name to trigger name
             isMoving = false;
             DogJump();
             Destroy(collision.gameObject);
