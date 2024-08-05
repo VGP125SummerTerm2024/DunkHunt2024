@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class GameManager : MonoBehaviour
         // Initialize high score and game mode
         HighScore = PlayerPrefs.GetInt("HighScore", 0);
         //GameMode = "Classic"; // Default game mode, confirm name
+        LoadMainMenu();
     }
 
     // Method to update high score
@@ -44,10 +46,36 @@ public class GameManager : MonoBehaviour
         if (mode >= 0 && mode <= 3)
         {
             GameMode = mode;
+            LoadSceneForGameMode();
         }
         else
         {
             Debug.LogWarning("Invalid game mode selected.");
         }
+    }
+
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene("IPM Main Menu");
+    }
+
+    //Method to load scenes based on game mode - commenting out, Alexa is working on this
+    //private void LoadSceneForGameMode()
+    //{
+        //switch(GameMode)
+        //{
+           // case 0:
+                //LoadMainMenu();
+               // break;
+           // case 1:
+               // SceneManager.LoadScene("1DuckMode");
+               // break;
+           //case 2:
+                //SceneManager.LoadScene("2DuckMode");
+                //break;
+            //case 3:
+                //SceneManager.LoadScene("ClayPigeonScene");
+                //break;
+       // }
     }
 }
