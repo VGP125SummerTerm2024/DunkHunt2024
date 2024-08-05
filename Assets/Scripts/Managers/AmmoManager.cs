@@ -6,28 +6,42 @@ public class AmmoManager : MonoBehaviour
     public int maxAmmo = 3;
     private int currentAmmo;
 
-    public Image[] ammoImages; // Array to hold ammo UI images
+    public GameObject[] ammoImages; // Array to hold ammo UI images
     public Sprite fullAmmoSprite;
     public Sprite emptyAmmoSprite;
 
-    public GameObject gameOverPanel; // Panel to show when the game is over
+    public GameObject ammoUICanvas;
+
+    AudioSource audioSource;
+    public AudioClip gunSound;
 
     private void Start()
     {
         currentAmmo = maxAmmo;
         UpdateAmmoUI();
-        gameOverPanel.SetActive(false);
+        ammoUICanvas.SetActive(true);
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Method to handle a missed shot
-    public void ShotMissed()
+    public void UpdateAmmo()
     {
-        currentAmmo--;
-        UpdateAmmoUI();
-        if (currentAmmo <= 0)
+        if (currentAmmo > 0)
         {
-            EndGame();
+            PlaySoundOnce(gunSound);
+            --currentAmmo;
+            UpdateAmmoUI();
+
+            if (currentAmmo <= 0)
+            {
+                EndGame();
+            }
         }
+
+        //if (currentAmmo <= 0)
+        //{
+        //    //EndGame();
+        //}
     }
 
     // Method to update the ammo UI **
@@ -37,18 +51,26 @@ public class AmmoManager : MonoBehaviour
         {
             if (i < currentAmmo)
             {
-                ammoImages[i].enabled = true; // Display bullet
+                ammoImages[i].SetActive(true); // Display bullet
             }
             else
             {
-                ammoImages[i].enabled = false; // Hide bullet
+                
+                ammoImages[i].SetActive(false); // Hide bullet
             }
         }
     }
     // Method to handle the end of the game
     private void EndGame()
     {
-        gameOverPanel.SetActive(true);
+        ammoUICanvas.SetActive(false);
         // Additional end game logic can be added here
+    }
+
+    private void PlaySoundOnce(AudioClip clip)
+    {
+        audioSource.Stop();
+        audioSource.clip = clip;
+        audioSource.Play();
     }
 }
