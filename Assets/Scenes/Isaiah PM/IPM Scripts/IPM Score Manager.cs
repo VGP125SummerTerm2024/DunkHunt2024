@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -42,8 +43,7 @@ public class IPMScoreManager : MonoBehaviour
     /// This is the end of the singleton pattern logic.
     /// </summary>
 
-    public Text score;
-    public Text round;
+    public TextMeshProUGUI score;
 
     public int currentRound = 1;
     public int scoreValue;
@@ -55,13 +55,6 @@ public class IPMScoreManager : MonoBehaviour
     private int blueBase = 1000;
     private int redBase = 1500;
     private int perfectBase = 10000;
-
-    public Button B1;
-    public Button B2;
-    public Button B3;
-    public Button B4;
-    public Button AR;
-    public Button MR;
     
     
     private void Awake()
@@ -87,7 +80,6 @@ public class IPMScoreManager : MonoBehaviour
         // This does not need to be ran every frame, but until I can marry this and the round counter, I will leave it here.
         // Once I have access to the round counter, then this method will be called once per round.
         RoundMultiplier();
-        round.text = currentRound.ToString();
     }
 
     // The method which will be called when the black duck is clicked.
@@ -106,7 +98,6 @@ public class IPMScoreManager : MonoBehaviour
             Debug.Log("Score that was just added = " + (blackBase + (blackBase * duckMultiplier / 100)));
         }
 
-        ResetButtonVisual(B1);
 
         ScoreFormatter();
     }
@@ -127,7 +118,6 @@ public class IPMScoreManager : MonoBehaviour
             Debug.Log("Score that was just added = " + (blueBase + (blueBase * duckMultiplier / 100)));
         }
 
-        ResetButtonVisual(B2);
         
         ScoreFormatter();
     }
@@ -148,7 +138,6 @@ public class IPMScoreManager : MonoBehaviour
             Debug.Log("Score that was just added = " + (redBase + (redBase * duckMultiplier / 100)));
         }
 
-        ResetButtonVisual(B3);
 
         ScoreFormatter();
     }
@@ -168,8 +157,6 @@ public class IPMScoreManager : MonoBehaviour
             Debug.Log("Score that was just added = " + (perfectBase + (perfectBase * perfectMultiplier / 100)));
         }
 
-        ResetButtonVisual(B4);
-
         ScoreFormatter();
     }
 
@@ -182,7 +169,6 @@ public class IPMScoreManager : MonoBehaviour
             currentRound = 99;
         }
 
-        ResetButtonVisual(AR);
     }
 
     public void MinusRound()
@@ -194,14 +180,6 @@ public class IPMScoreManager : MonoBehaviour
             currentRound = 1;
         }
 
-        ResetButtonVisual(MR);
-    }
-
-    // The method which will reset the button visual. This precents the "Selected" colour from being applied to the button.
-    private void ResetButtonVisual(Button button)
-    {
-        button.interactable = false;
-        button.interactable = true;
     }
 
     //I know this is over complicated, but for now it does what I need it to do.
