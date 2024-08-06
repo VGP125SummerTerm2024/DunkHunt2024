@@ -9,7 +9,7 @@ public class RoundIndicator : MonoBehaviour
 
     [SerializeField] Sprite[] numbers;
 
-    [SerializeField] roundManager rm;
+    [SerializeField] RoundManager rm;
 
 
     // Start is called before the first frame update
