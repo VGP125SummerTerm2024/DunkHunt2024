@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
 
         //HighScore = PlayerPrefs.GetInt("HighScore", 0);
         //GameMode = "Classic"; // Default game mode, confirm name
-        LoadMainMenu();
+        //LoadMainMenu();
 
     }
 
@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
     // Method to switch game modes
     public void SetGameMode(int mode)
     {
-        if (mode >= 0 && mode <= 3)
+        if (mode >= 1 && mode <= 3)
         {
             GameMode = mode;
             //LoadSceneForGameMode();
