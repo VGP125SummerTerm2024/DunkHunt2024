@@ -63,7 +63,7 @@ public class AmmoManager : MonoBehaviour
     // Method to handle the end of the game
     private void EndGame()
     {
-        ammoUICanvas.SetActive(false);
+        //ammoUICanvas.SetActive(false);
         // Additional end game logic can be added here
     }
 
@@ -72,5 +72,12 @@ public class AmmoManager : MonoBehaviour
         audioSource.Stop();
         audioSource.clip = clip;
         audioSource.Play();
+    }
+
+    public void reload()
+    {
+        currentAmmo = maxAmmo;
+        UpdateAmmoUI();
+        ammoUICanvas.SetActive(true);
     }
 }
