@@ -215,7 +215,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arcade - Vs Duck Hunt - Vs Duck Hunt_5
+      name: Round_Indicator
       rect:
         serializedVersion: 2
         x: 523
@@ -5259,7 +5259,6 @@ TextureImporter:
       Arcade - Vs Duck Hunt - Vs Duck Hunt_38: 2034282090
       Arcade - Vs Duck Hunt - Vs Duck Hunt_39: 872110429
       Arcade - Vs Duck Hunt - Vs Duck Hunt_40: -719482799
-      Arcade - Vs Duck Hunt - Vs Duck Hunt_5: 217112169
       Arcade - Vs Duck Hunt - Vs Duck Hunt_51: 553545064
       Arcade - Vs Duck Hunt - Vs Duck Hunt_52: 677993456
       Arcade - Vs Duck Hunt - Vs Duck Hunt_53: -1632791821
@@ -5411,6 +5410,7 @@ TextureImporter:
       Player2: 208016986
       Pts: -1836483472
       R: 1535752503
+      Round_Indicator: 217112169
       Shot: 993266290
       Tree: 942693985
       White_0: 778307631
