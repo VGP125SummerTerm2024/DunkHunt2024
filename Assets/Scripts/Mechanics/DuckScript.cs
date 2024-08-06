@@ -162,8 +162,6 @@ public class DuckScript : MonoBehaviour
         animator.SetTrigger("DuckHit");
         isDead = true;
         moveDirection = new Vector2(0, 0);
-        yield return new WaitForSeconds(.5f);
-        moveDirection = new Vector2(0, -1);
 
         if (duckType == 1)
         {
@@ -177,6 +175,11 @@ public class DuckScript : MonoBehaviour
         {
             IPMScoreManager.Instance._RedDuck();
         }
+
+        yield return new WaitForSeconds(.5f);
+        moveDirection = new Vector2(0, -1);
+
+        IPMScoreManager.Instance.ScoreSpawn(transform.position, duckType);
     }
 
     private void PlaySoundOnce(AudioClip clip)

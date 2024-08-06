@@ -1601,6 +1601,8 @@ MonoBehaviour:
   score: {fileID: 1848334653}
   currentRound: 1
   scoreValue: 0
+  textPrefab: {fileID: 5528102969533947201, guid: 179eba57abd546140be677e5c4018e90, type: 3}
+  scoreText: 
 --- !u!4 &1293043958
 Transform:
   m_ObjectHideFlags: 0

@@ -55,6 +55,9 @@ public class IPMScoreManager : MonoBehaviour
     private int blueBase = 1000;
     private int redBase = 1500;
     private int perfectBase = 10000;
+
+    public GameObject textPrefab;
+    public string scoreText;
     
     
     private void Awake()
@@ -225,5 +228,64 @@ public class IPMScoreManager : MonoBehaviour
             score.text = scoreValue.ToString();
         }
 
+    }
+
+    public void ScoreSpawn(Vector2 position, int DType)
+    {
+        if (DType == 1)
+        {
+            if (currentRound <= 5)
+            {
+                scoreText = blackBase.ToString();
+
+                Debug.Log("Score that was just added = " + blackBase);
+            }
+            else
+            {
+                scoreText = (blackBase + (blackBase * duckMultiplier / 100)).ToString();
+
+                Debug.Log("Score that was just added = " + (blackBase + (blackBase * duckMultiplier / 100)));
+            }
+        }
+        else if (DType == 2)
+        {
+            if (currentRound <= 5)
+            {
+                scoreText = blueBase.ToString();
+
+                Debug.Log("Score that was just added = " + blueBase);
+            }
+            else
+            {
+                scoreText = (blueBase + (redBase * duckMultiplier / 100)).ToString();
+
+                Debug.Log("Score that was just added = " + (blueBase + (blueBase * duckMultiplier / 100)));
+            }
+        }
+        else if (DType == 3)
+        {
+            if (currentRound <= 5)
+            {
+                scoreText = redBase.ToString();
+
+                Debug.Log("Score that was just added = " + redBase);
+            }
+            else
+            {
+                scoreText = (redBase + (redBase * duckMultiplier / 100)).ToString();
+
+                Debug.Log("Score that was just added = " + (redBase + (redBase * duckMultiplier / 100)));
+            }
+        }
+
+        GameObject textInstance = Instantiate(textPrefab, position, Quaternion.identity);
+
+        TextMeshProUGUI textComponent = textInstance.GetComponentInChildren<TextMeshProUGUI>();
+        if (textComponent != null)
+        {
+            textComponent.text = scoreText;
+        }
+
+        Destroy(textInstance, 1.5f);
     }
 }
