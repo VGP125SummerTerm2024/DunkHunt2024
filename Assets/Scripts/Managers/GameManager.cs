@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
     {
         // Initialize high score and game mode
 
-        HighScore = PlayerPrefs.GetInt("HighScore", 0);
+        //HighScore = PlayerPrefs.GetInt("HighScore", 0);
         //GameMode = "Classic"; // Default game mode, confirm name
         LoadMainMenu();
 
@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
         if (mode >= 0 && mode <= 3)
         {
             GameMode = mode;
-            LoadSceneForGameMode();
+            //LoadSceneForGameMode();
         }
         else
         {
@@ -90,5 +90,4 @@ public class GameManager : MonoBehaviour
                 //break;
        // }
 
-    }
 }
