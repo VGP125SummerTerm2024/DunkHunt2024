@@ -19,11 +19,11 @@ public class IPMButtons : MonoBehaviour
 
     public void Game1()
     {
-         SceneManager.LoadScene("IPM Example 1");
+         SceneManager.LoadScene("1DuckMode");
     }
     public void Game2()
     {
-         SceneManager.LoadScene("IPM Example 2");
+         SceneManager.LoadScene("1DuckMode");
     }
     public void IsaiahPM() //This is just for development use.
     {
