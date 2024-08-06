@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadMainMenu()
     {
-        SceneManager.LoadScene("IPM Main Menu");
+        //SceneManager.LoadScene("IPM Main Menu");
     }
 
     //Method to load scenes based on game mode - commenting out, Alexa is working on this
