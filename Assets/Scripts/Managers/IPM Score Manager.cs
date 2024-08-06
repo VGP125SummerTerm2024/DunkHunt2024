@@ -242,7 +242,7 @@ public class IPMScoreManager : MonoBehaviour
             }
             else
             {
-                scoreText = blackBase.ToString() + (blackBase * duckMultiplier / 100);
+                scoreText = (blackBase + (blackBase * duckMultiplier / 100)).ToString();
 
                 Debug.Log("Score that was just added = " + (blackBase + (blackBase * duckMultiplier / 100)));
             }
@@ -257,7 +257,7 @@ public class IPMScoreManager : MonoBehaviour
             }
             else
             {
-                scoreText = blueBase.ToString() + (redBase * duckMultiplier / 100);
+                scoreText = (blueBase + (redBase * duckMultiplier / 100)).ToString();
 
                 Debug.Log("Score that was just added = " + (blueBase + (blueBase * duckMultiplier / 100)));
             }
@@ -272,7 +272,7 @@ public class IPMScoreManager : MonoBehaviour
             }
             else
             {
-                scoreText = redBase.ToString() + (redBase * duckMultiplier / 100);
+                scoreText = (redBase + (redBase * duckMultiplier / 100)).ToString();
 
                 Debug.Log("Score that was just added = " + (redBase + (redBase * duckMultiplier / 100)));
             }
