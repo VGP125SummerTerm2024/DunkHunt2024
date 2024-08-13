@@ -6,15 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/Isaiah PM/IPM Scenes/IPM Menu Scene/IPM Main Menu.unity
+    path: Assets/Scenes/IPM Main Menu.unity
     guid: e742aa037cecbc74db7d4a8b92bdfe90
   - enabled: 1
-    path: Assets/Scenes/Isaiah PM/IPM Scenes/IPM Menu Scene/IPM Example 2.unity
-    guid: 233f0bb3aa7751442a1408dedfbbd9a3
+    path: Assets/Scenes/1DuckMode.unity
+    guid: faa0b557cf6875440a116c94db188509
   - enabled: 1
-    path: Assets/Scenes/Isaiah PM/IPM Scenes/IPM Menu Scene/IPM Example 1.unity
-    guid: 72ab89cefd1691f409e894e4ffa9bc83
+    path: Assets/Scenes/Clayshoot.unity
+    guid: 6bb8f6152ab52e1428496245242a1d7c
   m_configObjects: {}

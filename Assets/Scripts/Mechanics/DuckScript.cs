@@ -26,6 +26,8 @@ public class DuckScript : MonoBehaviour
     public AmmoManager ammoManager;
     public AudioClip quackSound;
 
+    public int duckType;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +36,19 @@ public class DuckScript : MonoBehaviour
         animator = GetComponent<Animator>();
         ammoManager = FindObjectOfType<AmmoManager>();
         audioSource = GetComponent<AudioSource>();
+
+        if (sr.sprite.name == "Duck_Green_FlyDiagonal1")
+        {
+            duckType = 1;
+        }
+        else if (sr.sprite.name == "Duck_Blue_FlyDiagonal1")
+        {
+            duckType = 2;
+        }
+        else if (sr.sprite.name == "Duck_Red_FlyDiagonal1")
+        {
+            duckType = 3;
+        }
 
         int leftRight;
         float verticalMovement;
@@ -147,8 +162,24 @@ public class DuckScript : MonoBehaviour
         animator.SetTrigger("DuckHit");
         isDead = true;
         moveDirection = new Vector2(0, 0);
+
+        if (duckType == 1)
+        {
+            IPMScoreManager.Instance._BlackDuck();
+        }
+        else if (duckType == 2)
+        {
+            IPMScoreManager.Instance._BlueDuck();
+        }
+        else if (duckType == 3)
+        {
+            IPMScoreManager.Instance._RedDuck();
+        }
+
         yield return new WaitForSeconds(.5f);
         moveDirection = new Vector2(0, -1);
+
+        IPMScoreManager.Instance.ScoreSpawn(transform.position, duckType);
     }
 
     private void PlaySoundOnce(AudioClip clip)
