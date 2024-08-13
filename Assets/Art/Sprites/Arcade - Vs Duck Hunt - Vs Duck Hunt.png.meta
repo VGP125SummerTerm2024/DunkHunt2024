@@ -2882,7 +2882,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud_Small1
+      name: Clay_Small1
       rect:
         serializedVersion: 2
         x: 284
@@ -2903,7 +2903,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud_Small2
+      name: Clay_Small2
       rect:
         serializedVersion: 2
         x: 310
@@ -2924,7 +2924,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud_Small13
+      name: Clay_Small13
       rect:
         serializedVersion: 2
         x: 485
@@ -2945,7 +2945,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud_Small16
+      name: Clay_Small16
       rect:
         serializedVersion: 2
         x: 495
@@ -2966,7 +2966,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud_Small17
+      name: Clay_Small17
       rect:
         serializedVersion: 2
         x: 505
@@ -3008,7 +3008,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud_Small3
+      name: Clay_Small3
       rect:
         serializedVersion: 2
         x: 336
@@ -3029,7 +3029,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud_Small4
+      name: Clay_Small4
       rect:
         serializedVersion: 2
         x: 362
@@ -3050,7 +3050,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud_Small5
+      name: Clay_Small5
       rect:
         serializedVersion: 2
         x: 380
@@ -3071,7 +3071,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud_Small6
+      name: Clay_Small6
       rect:
         serializedVersion: 2
         x: 398
@@ -3092,7 +3092,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud_Small7
+      name: Clay_Small7
       rect:
         serializedVersion: 2
         x: 416
@@ -3113,7 +3113,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud_Small8
+      name: Clay_Small8
       rect:
         serializedVersion: 2
         x: 434
@@ -3134,7 +3134,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud_Small9
+      name: Clay_Small9
       rect:
         serializedVersion: 2
         x: 444
@@ -3155,7 +3155,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud_Small10
+      name: Clay_Small10
       rect:
         serializedVersion: 2
         x: 454
@@ -3176,7 +3176,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud_Small11
+      name: Clay_Small11
       rect:
         serializedVersion: 2
         x: 464
@@ -3197,7 +3197,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud_Small12
+      name: Clay_Small12
       rect:
         serializedVersion: 2
         x: 474
@@ -3218,7 +3218,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud_Small14
+      name: Clay_Small14
       rect:
         serializedVersion: 2
         x: 485
@@ -3239,7 +3239,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud_Small15
+      name: Clay_Small15
       rect:
         serializedVersion: 2
         x: 495
@@ -5274,26 +5274,26 @@ TextureImporter:
       BonusRound: -452584650
       Bullet: 280143929
       Bush: -1468134612
+      Clay_Small1: 776797249
+      Clay_Small10: 95335742
+      Clay_Small11: 2000982704
+      Clay_Small12: -2117144388
+      Clay_Small13: -2098693003
+      Clay_Small14: 1196135192
+      Clay_Small15: -1120875528
+      Clay_Small16: -822996414
+      Clay_Small17: -1195235647
+      Clay_Small2: -2006751854
+      Clay_Small3: -1083440335
+      Clay_Small4: -2034181594
+      Clay_Small5: 788688474
+      Clay_Small6: 156274172
+      Clay_Small7: -529156046
+      Clay_Small8: 303244837
+      Clay_Small9: -1067309749
       Cloud_Puff_1: -1426649440
       Cloud_Puff_2: 1487362710
       Cloud_Puff_3: 1651741135
-      Cloud_Small1: 776797249
-      Cloud_Small10: 95335742
-      Cloud_Small11: 2000982704
-      Cloud_Small12: -2117144388
-      Cloud_Small13: -2098693003
-      Cloud_Small14: 1196135192
-      Cloud_Small15: -1120875528
-      Cloud_Small16: -822996414
-      Cloud_Small17: -1195235647
-      Cloud_Small2: -2006751854
-      Cloud_Small3: -1083440335
-      Cloud_Small4: -2034181594
-      Cloud_Small5: 788688474
-      Cloud_Small6: 156274172
-      Cloud_Small7: -529156046
-      Cloud_Small8: 303244837
-      Cloud_Small9: -1067309749
       Dog_Clap1: -917608347
       Dog_Clap2: -629519526
       Dog_Holding1Duck: 321765656
