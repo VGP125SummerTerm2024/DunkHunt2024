@@ -18,8 +18,8 @@ public class ClayTarget : MonoBehaviour
     private Animator animator;
     public int clayType = 1;
 
-    private AudioSource audioSource;
-    public AudioClip flySound;
+    public AudioSource audioSource;
+    public AudioClip flyClip;
 
     void Start()
     {
@@ -32,11 +32,14 @@ public class ClayTarget : MonoBehaviour
         }
 
         // Randomly set the initial direction and speed for the target
-        direction = new Vector2(Random.Range(-horizontalSpeed, horizontalSpeed), verticalSpeed).normalized;
+        float angleRange = horizontalSpeed * 0.5f;
+        direction = new Vector2(Random.Range(-angleRange, angleRange), verticalSpeed).normalized;
 
         // Initialize starting position and maximum height
         startY = transform.position.y;
         maxY = startY + 10f; // Adjust this value based on your desired maximum height
+
+        PlaySoundOnce(flyClip);
     }
 
     void Update()
@@ -45,12 +48,13 @@ public class ClayTarget : MonoBehaviour
         {
             // Move the clay target
             rb.velocity = direction * speed;
+            
 
             // Adjust scale based on vertical position
             float scale = Mathf.Lerp(maxScale, minScale, (transform.position.y - startY) / (maxY - startY));
             transform.localScale = new Vector3(scale, scale, 1);
 
-           // PlaySoundOnce(flySound);
+            
 
             // Check for mouse click
             if (Input.GetMouseButtonDown(0))
