@@ -25,6 +25,11 @@ public class IPMButtons : MonoBehaviour
     {
          SceneManager.LoadScene("1DuckMode");
     }
+
+    public void Game3()
+    {
+        SceneManager.LoadScene("Clayshoot");
+    }
     public void IsaiahPM() //This is just for development use.
     {
          SceneManager.LoadScene("IPM Main Menu");

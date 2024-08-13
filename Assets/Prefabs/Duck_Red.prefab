@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4709900116878981304}
   - component: {fileID: 3159457254439265953}
   - component: {fileID: 552008052074860344}
+  - component: {fileID: -8843743897850410010}
   m_Layer: 3
   m_Name: Duck_Red
   m_TagString: Enemy
@@ -297,3 +298,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-8843743897850410010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007471546369355961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2c2792e65279ca4f96dee89d11e4faf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dog: {fileID: 0}
+  spawnManager: {fileID: 0}
