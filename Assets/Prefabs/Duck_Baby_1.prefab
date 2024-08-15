@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: -879697907
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1107106122, guid: 93905210700021e41bbc5bd374f4d5e1, type: 3}
+  m_Sprite: {fileID: 776797249, guid: 93905210700021e41bbc5bd374f4d5e1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66b3af071da6caf46ac75f51ca23281d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 5
   verticalSpeed: 2
   horizontalSpeed: 2
   direction: {x: 0, y: 0}
@@ -112,6 +112,7 @@ MonoBehaviour:
   clayType: 1
   audioSource: {fileID: 957850281221268718}
   flyClip: {fileID: 8300000, guid: 3e6982b6c4521a44abe610007d536c77, type: 3}
+  DuckHitUI: {fileID: 0}
 --- !u!50 &5212231571442998111
 Rigidbody2D:
   serializedVersion: 4
@@ -175,7 +176,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.8, y: 1}
+    oldSize: {x: 1.2, y: 0.8}
     newSize: {x: 0.8, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -194,7 +195,7 @@ Animator:
   m_GameObject: {fileID: 3422559335644381031}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 47e5a3a13be21474ab0a1f8150285af5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

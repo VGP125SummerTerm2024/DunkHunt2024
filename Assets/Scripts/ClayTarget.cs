@@ -21,11 +21,14 @@ public class ClayTarget : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip flyClip;
 
+    public DuckHit DuckHitUI;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>(); // Ensure the Animator is referenced
         ammoManager = FindObjectOfType<AmmoManager>();
+        DuckHitUI = FindObjectOfType<DuckHit>();
         if (ammoManager == null)
         {
             Debug.LogError("AmmoManager not found in the scene!");
@@ -54,7 +57,7 @@ public class ClayTarget : MonoBehaviour
             float scale = Mathf.Lerp(maxScale, minScale, (transform.position.y - startY) / (maxY - startY));
             transform.localScale = new Vector3(scale, scale, 1);
 
-            
+
 
             // Check for mouse click
             if (Input.GetMouseButtonDown(0))
@@ -63,7 +66,9 @@ public class ClayTarget : MonoBehaviour
                 if (GetComponent<Collider2D>().OverlapPoint(mousePosition))
                 {
                     OnHit();
+                   // DuckHitUI.RegisterHit();
                 }
+
             }
         }
 
