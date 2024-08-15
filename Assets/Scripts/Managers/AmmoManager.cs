@@ -55,7 +55,6 @@ public class AmmoManager : MonoBehaviour
             }
             else
             {
-                
                 ammoImages[i].SetActive(false); // Hide bullet
             }
         }
@@ -79,5 +78,10 @@ public class AmmoManager : MonoBehaviour
         currentAmmo = maxAmmo;
         UpdateAmmoUI();
         ammoUICanvas.SetActive(true);
+    }
+
+    public int getAmmo()
+    {
+        return currentAmmo;
     }
 }

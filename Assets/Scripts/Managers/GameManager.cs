@@ -25,20 +25,14 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
             return;
         }
-        else
-        {
-            Destroy(gameObject);
-        }
+        Destroy(gameObject);
     }
 
     private void Start()
     {
-        // Initialize high score and game mode
-
-        //HighScore = PlayerPrefs.GetInt("HighScore", 0);
-        //GameMode = "Classic"; // Default game mode, confirm name
-        //LoadMainMenu();
-
+        // Set gamemode and get stored high score
+        GameMode = 1;
+        highScore = PlayerPrefs.GetInt("HighScore", 0);
     }
 
     // Method to update high score
