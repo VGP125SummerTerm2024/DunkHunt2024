@@ -76,7 +76,7 @@ public class DogAI : MonoBehaviour
         duckHitCount = 0;
         sr.sprite = laughSprite;
         PlaySoundOnce(laugh);
-        anim.Play("Laugh");
+        anim.Play("Dog_Laugh");
         StartCoroutine(MoveUpPauseAndReturn());
     }
 

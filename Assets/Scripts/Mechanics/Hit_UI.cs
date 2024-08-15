@@ -73,6 +73,8 @@ public class DuckHit : MonoBehaviour
         if (hits >= ducksToHit)
         {
             Debug.Log($"You hit {hits} ducks! Moving to the next level.");
+            if (hits == 10)
+                IPMScoreManager.Instance._PerfectScore();
             NextLevel();
         }
         else
