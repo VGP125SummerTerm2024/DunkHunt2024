@@ -16,6 +16,7 @@ public class DuckScript : MonoBehaviour
     [SerializeField] float baseSpeed = 4000f;
 
     bool isDead = false;
+    bool missed = false;
 
     public float speed;
 
@@ -91,10 +92,14 @@ public class DuckScript : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            if (GetComponent<Collider2D>().OverlapPoint(mousePosition) && !isDead)
+            if (GetComponent<Collider2D>().OverlapPoint(mousePosition) && !isDead && !missed)
             {
                 rb.gravityScale = 0;
                 rb.gameObject.layer = LayerMask.NameToLayer("DeadDuck");
+
+                DuckHit hit_UI = (DuckHit)FindObjectOfType(typeof(DuckHit));
+                hit_UI.RegisterHit();
+
                 StartCoroutine(duckHit());
             }
             ammoManager.UpdateAmmo();
@@ -111,6 +116,8 @@ public class DuckScript : MonoBehaviour
         else if (collision.gameObject.CompareTag("DuckGroundTrigger"))
         {
             // tell round manager ducks transform location and duck hit
+            RoundManager rm = FindObjectOfType<RoundManager>();
+            rm.onDuckDestroy(gameObject);
             Destroy(gameObject);
         }
     }
@@ -180,6 +187,27 @@ public class DuckScript : MonoBehaviour
         moveDirection = new Vector2(0, -1);
 
         IPMScoreManager.Instance.ScoreSpawn(transform.position, duckType);
+    }
+
+    IEnumerator deathDelay()
+    {
+        yield return new WaitForSeconds(2.5f);
+        RoundManager rm = FindObjectOfType<RoundManager>();
+        rm.onDuckDestroy(gameObject);
+        Destroy(gameObject);
+    }
+
+    public void FlyAway()
+    {
+        if (isDead) return;
+
+        DuckHit hit_UI = (DuckHit)FindObjectOfType(typeof(DuckHit));
+        hit_UI.RegisterMiss();
+        rb.gameObject.layer = LayerMask.NameToLayer("DeadDuck");
+        missed = true;
+        animator.SetTrigger("FlyAway");
+        moveDirection = new Vector2(0, 1);
+        StartCoroutine(deathDelay());
     }
 
     private void PlaySoundOnce(AudioClip clip)

@@ -11,7 +11,6 @@ public class DuckHit : MonoBehaviour
     private int ducksMissed;
     private int hits;
     private int ducksProcessed; // Counter for processed ducks
-    private bool isGameOver;
 
     public GameObject[] duckImages; // Array of duck images
     public Slider ducksToHitSlider; // Reference to the Slider component
@@ -23,25 +22,12 @@ public class DuckHit : MonoBehaviour
         hits = 0;
         ducksMissed = 0;
         ducksProcessed = 0; // Initialize counter
-        isGameOver = false;
         Debug.Log("Welcome to Duck Hunt!");
         StartLevel();
     }
 
     void Update()
     {
-        if (isGameOver) return;
-
-        // Simulate shooting by pressing the left mouse button
-        if (Input.GetMouseButtonDown(0))
-        {
-            RegisterHit();
-        }
-        // Simulate missing by pressing the right mouse button
-        if (Input.GetMouseButtonDown(1))
-        {
-            RegisterMiss();
-        }
     }
 
     private void StartLevel()
@@ -52,7 +38,7 @@ public class DuckHit : MonoBehaviour
         UpdateUI();
     }
 
-    private void RegisterHit()
+    public void RegisterHit()
     {
         if (ducksProcessed < ducksPerLevel)
         {
@@ -67,7 +53,7 @@ public class DuckHit : MonoBehaviour
         }
     }
 
-    private void RegisterMiss()
+    public void RegisterMiss()
     {
         if (ducksProcessed < ducksPerLevel)
         {
@@ -82,7 +68,7 @@ public class DuckHit : MonoBehaviour
         }
     }
 
-    private void CheckGameState()
+    public void CheckGameState()
     {
         if (hits >= ducksToHit)
         {
@@ -96,7 +82,8 @@ public class DuckHit : MonoBehaviour
             {
                 // If the player has processed all ducks but didn't hit enough
                 Debug.Log("Not enough ducks hit. Game Over!");
-                isGameOver = true;
+                RoundManager rm = FindAnyObjectByType<RoundManager>();
+                rm.gameOver();
             }
         }
     }
