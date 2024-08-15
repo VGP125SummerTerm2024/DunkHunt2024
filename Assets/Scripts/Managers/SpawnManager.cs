@@ -9,8 +9,9 @@ public class SpawnManager : MonoBehaviour
 
     [SerializeField] public GameObject[] DuckPrefabs;
     [SerializeField] public Transform[] SpawnPositions;
+    [SerializeField] RoundManager rm;
 
-    public int gameNum = GameManager.Instance.GameMode;
+    public int gameNum;
 
     public int rndNum;
 
@@ -19,6 +20,9 @@ public class SpawnManager : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
 
         GameObject Duck2 = Instantiate(DuckPrefabs[Random.Range(0, DuckPrefabs.Length)], SpawnPositions[spawnPos].position, Quaternion.identity);
+
+        rm.ducks++; ;
+        rm.duckObj.Add(Duck2.name, Duck2);
 
         Duck2.GetComponent<Rigidbody2D>().velocity = new Vector2(1, 5);
     }
@@ -30,7 +34,7 @@ public class SpawnManager : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
     void Update()
@@ -39,8 +43,7 @@ public class SpawnManager : MonoBehaviour
         {
             DuckSpawner();
         }
-
-
+        gameNum = GameManager.Instance.GameMode;
     }
 
     public void DuckSpawner()
@@ -48,6 +51,7 @@ public class SpawnManager : MonoBehaviour
         //Select spawn positions for the ducks and ensure they are different
         int spawnPos1 = Random.Range(0, SpawnPositions.Length);
         int spawnPos2 = Random.Range(0, SpawnPositions.Length);
+        GameObject Duck1;
 
         while (spawnPos2 == spawnPos1)
         {
@@ -57,13 +61,17 @@ public class SpawnManager : MonoBehaviour
         //instantiate the prefabs
         if (rndNum == 1)
         {
-            GameObject Duck1 = Instantiate(DuckPrefabs[Random.Range(0, DuckPrefabs.Length - 1)], SpawnPositions[spawnPos1].position, Quaternion.identity);
+            Duck1 = Instantiate(DuckPrefabs[Random.Range(0, DuckPrefabs.Length - 1)], SpawnPositions[spawnPos1].position, Quaternion.identity);
         }
         else
         {
-            GameObject Duck1 = Instantiate(DuckPrefabs[Random.Range(0, DuckPrefabs.Length)], SpawnPositions[spawnPos1].position, Quaternion.identity);
+            Duck1 = Instantiate(DuckPrefabs[Random.Range(0, DuckPrefabs.Length)], SpawnPositions[spawnPos1].position, Quaternion.identity);
         }
-        
+
+        if (rm.firstRound)
+            rm.firstRound = false;
+        rm.ducks++;
+        rm.duckObj.Add(Duck1.name, Duck1);
 
         if (gameNum == 2)
         {

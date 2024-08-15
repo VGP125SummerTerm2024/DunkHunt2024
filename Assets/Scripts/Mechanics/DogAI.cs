@@ -103,7 +103,7 @@ public class DogAI : MonoBehaviour
         float jumpVelocity = Mathf.Sqrt(2 * Mathf.Abs(Physics2D.gravity.y) * jumpHeight);
         rb.velocity = new Vector2(rb.velocity.x, jumpVelocity);
         StartCoroutine(JumpCoroutine());
-        duckMGR.DuckSpawner();
+        //duckMGR.DuckSpawner();
     }
 
     private IEnumerator JumpCoroutine()
@@ -114,7 +114,8 @@ public class DogAI : MonoBehaviour
         }
         // anim.SetTrigger("jumpChange") change name to trigger name
         sr.sortingLayerName = backgroundSortingLayer;
-        //duckMGR.DuckSpawner();    
+        yield return new WaitForSeconds(.6f);
+        duckMGR.DuckSpawner();    
     }
     private void DogMove()
     {
