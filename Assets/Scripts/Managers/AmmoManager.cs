@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class AmmoManager : MonoBehaviour
 {
     public int maxAmmo = 3;
-    private int currentAmmo;
+    public int currentAmmo;
 
     public GameObject[] ammoImages; // Array to hold ammo UI images
     public Sprite fullAmmoSprite;
@@ -55,7 +55,6 @@ public class AmmoManager : MonoBehaviour
             }
             else
             {
-                
                 ammoImages[i].SetActive(false); // Hide bullet
             }
         }
@@ -79,5 +78,10 @@ public class AmmoManager : MonoBehaviour
         currentAmmo = maxAmmo;
         UpdateAmmoUI();
         ammoUICanvas.SetActive(true);
+    }
+
+    public int getAmmo()
+    {
+        return currentAmmo;
     }
 }

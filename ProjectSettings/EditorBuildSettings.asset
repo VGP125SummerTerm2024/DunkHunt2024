@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/1DuckMode.unity
     guid: faa0b557cf6875440a116c94db188509
   - enabled: 1
+    path: Assets/Scenes/2DuckMode.unity
+    guid: 178db78ef56e9634bb636d3f688674de
+  - enabled: 1
     path: Assets/Scenes/Clayshoot.unity
     guid: 6bb8f6152ab52e1428496245242a1d7c
   m_configObjects: {}

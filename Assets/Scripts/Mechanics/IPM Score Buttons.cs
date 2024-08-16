@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,7 +14,7 @@ public class IPMScoreButtons : MonoBehaviour
 
     // However, I will make a script which follows the above recommendation, then decide which path we want to take later after I get a second opinion.
 
-    public Text score;
+    public TextMeshProUGUI score;
     public int scoreValue;
     public Button B1;
     public Button B2;
@@ -21,7 +22,8 @@ public class IPMScoreButtons : MonoBehaviour
     
     void Start()
     {
-        score.text = "000000"; // Doing this just so that we're not displaying null value.
+        scoreValue = GameManager.Instance.getHighScore();
+        ScoreFormatter();
     }
 
     void Update()

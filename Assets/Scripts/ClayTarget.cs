@@ -18,25 +18,31 @@ public class ClayTarget : MonoBehaviour
     private Animator animator;
     public int clayType = 1;
 
-    private AudioSource audioSource;
-    public AudioClip flySound;
+    public AudioSource audioSource;
+    public AudioClip flyClip;
+
+    public DuckHit DuckHitUI;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>(); // Ensure the Animator is referenced
         ammoManager = FindObjectOfType<AmmoManager>();
+        DuckHitUI = FindObjectOfType<DuckHit>();
         if (ammoManager == null)
         {
             Debug.LogError("AmmoManager not found in the scene!");
         }
 
         // Randomly set the initial direction and speed for the target
-        direction = new Vector2(Random.Range(-horizontalSpeed, horizontalSpeed), verticalSpeed).normalized;
+        float angleRange = horizontalSpeed * 0.5f;
+        direction = new Vector2(Random.Range(-angleRange, angleRange), verticalSpeed).normalized;
 
         // Initialize starting position and maximum height
         startY = transform.position.y;
         maxY = startY + 10f; // Adjust this value based on your desired maximum height
+
+        PlaySoundOnce(flyClip);
     }
 
     void Update()
@@ -50,15 +56,24 @@ public class ClayTarget : MonoBehaviour
             float scale = Mathf.Lerp(maxScale, minScale, (transform.position.y - startY) / (maxY - startY));
             transform.localScale = new Vector3(scale, scale, 1);
 
-           // PlaySoundOnce(flySound);
-
             // Check for mouse click
             if (Input.GetMouseButtonDown(0))
             {
+                ammoManager.UpdateAmmo();
                 Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                if (GetComponent<Collider2D>().OverlapPoint(mousePosition))
+
+                if (ammoManager.currentAmmo > 0)
                 {
-                    OnHit();
+                    if (GetComponent<Collider2D>().OverlapPoint(mousePosition))
+                    {
+                        OnHit();
+                        DuckHitUI.RegisterHit();
+
+                    }
+                    else
+                    {
+                        DuckHitUI.RegisterMiss();
+                    }
                 }
             }
         }
@@ -75,8 +90,7 @@ public class ClayTarget : MonoBehaviour
         rb.gravityScale = 0;
         rb.gameObject.layer = LayerMask.NameToLayer("DeadDuck");
         StartCoroutine(clayHit());
-        ammoManager.UpdateAmmo();
-        Destroy(gameObject);
+        
     }
 
     private IEnumerator clayHit()
@@ -87,13 +101,15 @@ public class ClayTarget : MonoBehaviour
 
         if (clayType == 1)
         {
-            IPMScoreManager.Instance._BlackDuck();
+            IPMScoreManager.Instance._BlueDuck();
         }
 
         yield return new WaitForSeconds(0.5f);
         direction = new Vector2(0, -1); // Make the clay target fall down
+        Destroy(gameObject);
 
         IPMScoreManager.Instance.ScoreSpawn(transform.position, clayType);
+
     }
 
     private bool IsVisible()
@@ -101,7 +117,6 @@ public class ClayTarget : MonoBehaviour
         Vector3 screenPoint = Camera.main.WorldToViewportPoint(transform.position);
         return screenPoint.x > 0 && screenPoint.x < 1 && screenPoint.y > 0 && screenPoint.y < 1;
     }
-
 
     private void PlaySoundOnce(AudioClip clip)
     {

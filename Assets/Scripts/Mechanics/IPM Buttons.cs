@@ -23,7 +23,7 @@ public class IPMButtons : MonoBehaviour
     }
     public void Game2()
     {
-         SceneManager.LoadScene("1DuckMode");
+         SceneManager.LoadScene("2DuckMode");
     }
 
     public void Game3()
