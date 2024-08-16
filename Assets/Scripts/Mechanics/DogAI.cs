@@ -85,6 +85,7 @@ public class DogAI : MonoBehaviour
         duckHitCount = 1;
         sr.sprite = oneDuckSprite;
         PlaySoundOnce(hitDuck);
+        anim.Play("Dog_Holding1Duck");
         StartCoroutine(MoveUpPauseAndReturn());
     }
 
@@ -93,6 +94,7 @@ public class DogAI : MonoBehaviour
         duckHitCount = 2;
         sr.sprite = twoDuckSprite;
         PlaySoundOnce(hitDuck);
+        anim.Play("Dog_Holding2Duck");
         StartCoroutine(MoveUpPauseAndReturn());
     }
 
