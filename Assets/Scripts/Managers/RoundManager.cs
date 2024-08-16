@@ -16,6 +16,7 @@ public class RoundManager : MonoBehaviour
     private int _subRoundMax = 10;
     private bool _timer;
     private float _timeLeft;
+    private bool roundPlaying = false;
     public DogAI DogAIRef;
 
     //UI elements that require updates
@@ -64,6 +65,11 @@ public class RoundManager : MonoBehaviour
     }
     private void Update()
     {
+        if (ducks > 0)
+            roundPlaying = true;
+        else
+            roundPlaying = false;
+
         // if spawning dont check for ducks or ammo round enders
         if (!spawning)
         {
@@ -72,7 +78,7 @@ public class RoundManager : MonoBehaviour
             {
                 subRoundOver = true;
                 AdvanceRound();
-                DogAIRef.DogHoldDuck();
+                StartCoroutine(dogDelay("HoldDuck"));
             }
             //else if player ran out of ammo mock player and make ducks fly away, increment round
             else if (ammo.getAmmo() <= 0 && !subRoundOver && ducks > 0)
@@ -80,10 +86,10 @@ public class RoundManager : MonoBehaviour
                 subRoundOver = true;
                 missedDucks();
                 AdvanceRound();
-                DogAIRef.DogLaugh();
+                StartCoroutine(dogDelay("Laugh"));
             }
             // tracks if player clicked and shot a bullet
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && roundPlaying)
             {
                 ammo.UpdateAmmo();
             }
@@ -97,6 +103,15 @@ public class RoundManager : MonoBehaviour
                 _timer = false;
             }
         }
+    }
+
+    IEnumerator dogDelay(string type)
+    {
+        yield return new WaitForSeconds(1.0f);
+        if (type == "Laugh")
+            DogAIRef.DogLaugh();
+        else if (type == "HoldDuck")
+            DogAIRef.DogHoldDuck();
     }
     
     private void AdvanceRound()
