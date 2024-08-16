@@ -25,9 +25,9 @@ public class ClayRoundManager : MonoBehaviour
     void Update()
     {
         
-        if (!isRoundActive && !isWaitingForRound && !spawning)
+        if (!isRoundActive && !isWaitingForRound && !spawning )
         {
-            StartCoroutine(StartRound());
+           // StartCoroutine(StartRound());
         }
     }
 
@@ -44,6 +44,8 @@ public class ClayRoundManager : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
         isWaitingForRound = false;
+
+        StartCoroutine(StartRound());
     }
 
     IEnumerator StartRound()
@@ -55,10 +57,12 @@ public class ClayRoundManager : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
 
-        StartCoroutine(targetSpawner.SpawnTargets());
-
-        yield return StartCoroutine(NextRound());
-
+            StartCoroutine(targetSpawner.SpawnTargets());
+  
+        if (targetSpawner.spawnedTargets == targetSpawner.maxTargets)
+        {
+            yield return StartCoroutine(NextRound());
+        }
         isRoundActive = false;
     }
 
@@ -75,7 +79,7 @@ public class ClayRoundManager : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
 
-        if (round == 99)
+        if (round == 99 )
         {
             StartCoroutine(EndGame());
         }

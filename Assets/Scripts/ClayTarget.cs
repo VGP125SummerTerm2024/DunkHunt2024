@@ -82,6 +82,8 @@ public class ClayTarget : MonoBehaviour
         if (!IsVisible())
         {
             Destroy(gameObject);
+            ClayTargetSpawner claySpawn = FindAnyObjectByType<ClayTargetSpawner>();
+            claySpawn.spawnedTargets--;
         }
     }
 
@@ -98,6 +100,8 @@ public class ClayTarget : MonoBehaviour
         animator.SetTrigger("ClayHit");
         isDead = true;
         direction = Vector2.zero;
+        ClayTargetSpawner claySpawn = FindAnyObjectByType<ClayTargetSpawner>(); 
+        claySpawn.spawnedTargets--;
 
         if (clayType == 1)
         {
