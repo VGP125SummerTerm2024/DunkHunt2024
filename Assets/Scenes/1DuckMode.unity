@@ -507,6 +507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxAmmo: 3
+  currentAmmo: 0
   ammoImages:
   - {fileID: 1881043622}
   - {fileID: 2052242593}
@@ -1711,16 +1712,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd09353a97d9dc6459e32674ffd88c9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _subRoundCount: 0
   DogAIRef: {fileID: 766696813}
   roundIndicator: {fileID: 1701524716}
   gameOverImage: {fileID: 192537967}
   spawnManager: {fileID: 1810681833}
+  ammo: {fileID: 412158397}
   subRoundTime: 3
-  RoundTIme: 3
+  RoundTime: 6
   firstRound: 1
   ducks: 0
-  ammo: {fileID: 412158397}
+  duckSpeedMult: 0
 --- !u!4 &1276156219
 Transform:
   m_ObjectHideFlags: 0
@@ -1872,6 +1873,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: {fileID: 1848334653}
   currentRound: 1
+  currentSubRound: 1
   scoreValue: 0
   textPrefab: {fileID: 5528102969533947201, guid: 179eba57abd546140be677e5c4018e90, type: 3}
   scoreText: 
@@ -2663,7 +2665,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 685652451}
-  - {fileID: 959286464}
   - {fileID: 1276156219}
   - {fileID: 173804952}
   - {fileID: 1885455058}
