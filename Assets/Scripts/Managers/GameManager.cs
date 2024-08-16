@@ -3,25 +3,20 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    static GameManager _Instance;
-    public static GameManager Instance => _Instance;
+    public static GameManager Instance { get; private set; }
 
     // Variables to track high score and game mode
     int highScore;
 
-    public int GameMode // 0:Menu 1:OneDuck 2:TwoDuck 3:ClayPigeon
-    { 
-        get => _GameMode; 
-        set => _GameMode = value;
-    }
+    public int GameMode; // 0:Menu 1:OneDuck 2:TwoDuck 3:ClayPigeon
 
     private int _GameMode;
 
     private void Awake()
     {
-        if (_Instance == null)
+        if (Instance == null)
         {
-            _Instance = this;
+            Instance = this;
             DontDestroyOnLoad(gameObject);
             return;
         }

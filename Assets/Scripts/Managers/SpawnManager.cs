@@ -10,9 +10,11 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] public GameObject[] DuckPrefabs;
     [SerializeField] public Transform[] SpawnPositions;
 
-    public int gameNum = GameManager.Instance.GameMode;
+    public int gameNum;
 
     public int rndNum;
+
+    public GameObject GameManager;
 
     IEnumerator SpawnDuck2(float waitTime, int spawnPos)
     {
@@ -30,7 +32,7 @@ public class SpawnManager : MonoBehaviour
 
     void Start()
     {
-        
+        GameManager = GameObject.FindWithTag("GameController");
     }
 
     void Update()
@@ -39,7 +41,7 @@ public class SpawnManager : MonoBehaviour
         {
             DuckSpawner();
         }
-
+        gameNum = GameManager.GetComponent<GameManager>().GameMode;
 
     }
 
