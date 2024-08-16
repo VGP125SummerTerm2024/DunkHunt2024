@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class AmmoManager : MonoBehaviour
 {
     public int maxAmmo = 3;
-    private int currentAmmo;
+    public int currentAmmo;
 
     public GameObject[] ammoImages; // Array to hold ammo UI images
     public Sprite fullAmmoSprite;
