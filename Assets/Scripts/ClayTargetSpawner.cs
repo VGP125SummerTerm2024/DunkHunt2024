@@ -27,10 +27,11 @@ public class ClayTargetSpawner : MonoBehaviour
 
     public IEnumerator SpawnTargets()
     {
-        while (spawnedTargets < maxTargets)
+        while (spawnedTargets < 2)
         {
             // Spawn the first target
             SpawnClayTarget();
+            spawnedTargets++;
 
             // Wait for a random delay between the two targets
             float randomDelay = UnityEngine.Random.Range(minDelayBetweenTargets, maxDelayBetweenTargets);
@@ -38,7 +39,7 @@ public class ClayTargetSpawner : MonoBehaviour
 
             // Spawn the second target
             SpawnClayTarget();
-            spawnedTargets += 2;
+            spawnedTargets ++;
 
             // Wait for the break interval before spawning the next pair
             yield return new WaitForSeconds(breakInterval);
