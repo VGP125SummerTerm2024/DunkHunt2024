@@ -13,7 +13,7 @@ public class DuckScript : MonoBehaviour
     Animator animator;
     AudioSource audioSource;
 
-    [SerializeField] float baseSpeed = 4000f;
+    [SerializeField] float baseSpeed = 5f;
 
     bool isDead = false;
     bool missed = false;
