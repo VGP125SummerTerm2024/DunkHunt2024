@@ -507,6 +507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxAmmo: 3
+  currentAmmo: 0
   ammoImages:
   - {fileID: 1881043622}
   - {fileID: 2052242593}
@@ -1212,11 +1213,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 211531014837191520, guid: f99924776389fac43931a2c403440347, type: 3}
       propertyPath: m_Pivot.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 211531014837191520, guid: f99924776389fac43931a2c403440347, type: 3}
       propertyPath: m_Pivot.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 211531014837191520, guid: f99924776389fac43931a2c403440347, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1236,11 +1237,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 211531014837191520, guid: f99924776389fac43931a2c403440347, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 289.3957
       objectReference: {fileID: 0}
     - target: {fileID: 211531014837191520, guid: f99924776389fac43931a2c403440347, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 62.9821
+      objectReference: {fileID: 0}
+    - target: {fileID: 211531014837191520, guid: f99924776389fac43931a2c403440347, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.028
+      objectReference: {fileID: 0}
+    - target: {fileID: 211531014837191520, guid: f99924776389fac43931a2c403440347, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.028
+      objectReference: {fileID: 0}
+    - target: {fileID: 211531014837191520, guid: f99924776389fac43931a2c403440347, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.028
       objectReference: {fileID: 0}
     - target: {fileID: 211531014837191520, guid: f99924776389fac43931a2c403440347, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1272,11 +1285,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 211531014837191520, guid: f99924776389fac43931a2c403440347, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 211531014837191520, guid: f99924776389fac43931a2c403440347, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 211531014837191520, guid: f99924776389fac43931a2c403440347, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1289,6 +1302,18 @@ PrefabInstance:
     - target: {fileID: 211531014837191520, guid: f99924776389fac43931a2c403440347, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 211531014837191520, guid: f99924776389fac43931a2c403440347, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2278105606024070551, guid: f99924776389fac43931a2c403440347, type: 3}
+      propertyPath: m_RenderMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2278105606024070551, guid: f99924776389fac43931a2c403440347, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -590608161
       objectReference: {fileID: 0}
     - target: {fileID: 2995290085669545439, guid: f99924776389fac43931a2c403440347, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1312,6 +1337,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8171740908198937600, guid: f99924776389fac43931a2c403440347, type: 3}
       propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8171740908198937600, guid: f99924776389fac43931a2c403440347, type: 3}
+      propertyPath: m_PresetInfoIsWorld
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1755,16 +1784,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd09353a97d9dc6459e32674ffd88c9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _subRoundCount: 0
   DogAIRef: {fileID: 766696813}
   roundIndicator: {fileID: 1701524716}
   gameOverImage: {fileID: 192537967}
   spawnManager: {fileID: 1810681833}
+  ammo: {fileID: 412158397}
   subRoundTime: 3
-  RoundTIme: 3
+  RoundTime: 6
   firstRound: 1
   ducks: 0
-  ammo: {fileID: 412158397}
+  duckSpeedMult: 0
 --- !u!4 &1276156219
 Transform:
   m_ObjectHideFlags: 0
@@ -1916,6 +1945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: {fileID: 1848334653}
   currentRound: 1
+  currentSubRound: 1
   scoreValue: 0
   textPrefab: {fileID: 5528102969533947201, guid: 179eba57abd546140be677e5c4018e90, type: 3}
   scoreText: 
