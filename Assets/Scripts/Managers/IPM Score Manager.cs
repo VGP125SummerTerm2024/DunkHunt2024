@@ -46,6 +46,7 @@ public class IPMScoreManager : MonoBehaviour
     public TextMeshProUGUI score;
 
     public int currentRound = 1;
+    public int currentSubRound = 1;
     public int scoreValue;
 
     private int duckMultiplier;
@@ -82,7 +83,7 @@ public class IPMScoreManager : MonoBehaviour
     {
         // This does not need to be ran every frame, but until I can marry this and the round counter, I will leave it here.
         // Once I have access to the round counter, then this method will be called once per round.
-        RoundMultiplier();
+        //RoundMultiplier();
     }
 
     // The method which will be called when the black duck is clicked.
@@ -186,9 +187,10 @@ public class IPMScoreManager : MonoBehaviour
     }
 
     //I know this is over complicated, but for now it does what I need it to do.
-    private void RoundMultiplier()
+    public void RoundMultiplier(int round)
     {
-
+        currentRound = round;
+        
         if (currentRound >= 6 && currentRound <= 10)
         {
             duckMultiplier = 60;

@@ -59,6 +59,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public int getHighScore()
+    {
+        return highScore;
+    }
+
 
     public void LoadMainMenu()
     {

@@ -21,8 +21,11 @@ public class SpawnManager : MonoBehaviour
 
         GameObject Duck2 = Instantiate(DuckPrefabs[Random.Range(0, DuckPrefabs.Length)], SpawnPositions[spawnPos].position, Quaternion.identity);
 
+        // update the round manager and give it the duck and ducks name
+        Duck2.GetComponent<DuckScript>().duckName = "Duck2";
+        Duck2.GetComponent<DuckScript>().speedMult = rm.duckSpeedMult;
         rm.ducks++; ;
-        rm.duckObj.Add(Duck2.name, Duck2);
+        rm.duckObj.Add(Duck2.GetComponent<DuckScript>().duckName, Duck2);
 
         Duck2.GetComponent<Rigidbody2D>().velocity = new Vector2(1, 5);
     }
@@ -68,10 +71,13 @@ public class SpawnManager : MonoBehaviour
             Duck1 = Instantiate(DuckPrefabs[Random.Range(0, DuckPrefabs.Length)], SpawnPositions[spawnPos1].position, Quaternion.identity);
         }
 
+        // update round manager and give it the duck and ducks name
         if (rm.firstRound)
             rm.firstRound = false;
+        Duck1.GetComponent<DuckScript>().duckName = "Duck1";
+        Duck1.GetComponent<DuckScript>().speedMult = rm.duckSpeedMult;
         rm.ducks++;
-        rm.duckObj.Add(Duck1.name, Duck1);
+        rm.duckObj.Add(Duck1.GetComponent<DuckScript>().duckName, Duck1);
 
         if (gameNum == 2)
         {
