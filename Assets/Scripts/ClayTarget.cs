@@ -21,11 +21,14 @@ public class ClayTarget : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip flyClip;
 
+    public DuckHit DuckHitUI;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>(); // Ensure the Animator is referenced
         ammoManager = FindObjectOfType<AmmoManager>();
+        DuckHitUI = FindObjectOfType<DuckHit>();
         if (ammoManager == null)
         {
             Debug.LogError("AmmoManager not found in the scene!");
@@ -48,21 +51,29 @@ public class ClayTarget : MonoBehaviour
         {
             // Move the clay target
             rb.velocity = direction * speed;
-            
 
             // Adjust scale based on vertical position
             float scale = Mathf.Lerp(maxScale, minScale, (transform.position.y - startY) / (maxY - startY));
             transform.localScale = new Vector3(scale, scale, 1);
 
-            
-
             // Check for mouse click
             if (Input.GetMouseButtonDown(0))
             {
+                ammoManager.UpdateAmmo();
                 Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                if (GetComponent<Collider2D>().OverlapPoint(mousePosition))
+
+                if (ammoManager.currentAmmo > 0)
                 {
-                    OnHit();
+                    if (GetComponent<Collider2D>().OverlapPoint(mousePosition))
+                    {
+                        OnHit();
+                        DuckHitUI.RegisterHit();
+
+                    }
+                    else
+                    {
+                        DuckHitUI.RegisterMiss();
+                    }
                 }
             }
         }
@@ -79,8 +90,7 @@ public class ClayTarget : MonoBehaviour
         rb.gravityScale = 0;
         rb.gameObject.layer = LayerMask.NameToLayer("DeadDuck");
         StartCoroutine(clayHit());
-        ammoManager.UpdateAmmo();
-        Destroy(gameObject);
+        
     }
 
     private IEnumerator clayHit()
@@ -91,13 +101,15 @@ public class ClayTarget : MonoBehaviour
 
         if (clayType == 1)
         {
-            IPMScoreManager.Instance._BlackDuck();
+            IPMScoreManager.Instance._BlueDuck();
         }
 
         yield return new WaitForSeconds(0.5f);
         direction = new Vector2(0, -1); // Make the clay target fall down
+        Destroy(gameObject);
 
         IPMScoreManager.Instance.ScoreSpawn(transform.position, clayType);
+
     }
 
     private bool IsVisible()
@@ -105,7 +117,6 @@ public class ClayTarget : MonoBehaviour
         Vector3 screenPoint = Camera.main.WorldToViewportPoint(transform.position);
         return screenPoint.x > 0 && screenPoint.x < 1 && screenPoint.y > 0 && screenPoint.y < 1;
     }
-
 
     private void PlaySoundOnce(AudioClip clip)
     {
