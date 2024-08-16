@@ -85,6 +85,7 @@ public class RoundManager : MonoBehaviour
             // tracks if player clicked and shot a bullet
             if (Input.GetMouseButtonDown(0))
             {
+                Debug.Log("Shot");
                 ammo.UpdateAmmo();
             }
         }
