@@ -13,7 +13,7 @@ public class ClayTargetSpawner : MonoBehaviour
     public float minDelayBetweenTargets = 0.5f; // Minimum delay between the two targets
     public float maxDelayBetweenTargets = 1.5f; // Maximum delay between the two targets
 
-    private int spawnedTargets = 0; // Counter to keep track of the number of spawned targets
+    public  int spawnedTargets = 0; // Counter to keep track of the number of spawned targets
 
     public AudioSource audioSource;
     public AudioClip spawnClip;
@@ -22,10 +22,10 @@ public class ClayTargetSpawner : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(SpawnTargets());
+        //StartCoroutine(SpawnTargets());
     }
 
-    private IEnumerator SpawnTargets()
+    public IEnumerator SpawnTargets()
     {
         while (spawnedTargets < maxTargets)
         {
