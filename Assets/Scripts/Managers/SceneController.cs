@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -56,7 +55,6 @@ public class SceneController: MonoBehaviour
     void Quit()
     {
         Debug.Log("Quitting Game...");
-        UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
     }
 

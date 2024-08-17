@@ -195,13 +195,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7845fc58af9465544a9d2e4fe9bfd12d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseSpeed: 4000
+  baseSpeed: 5
   speed: 0
+  speedMult: 2
   isDodgey: 0
   moveDirection: {x: 0, y: 0}
   ammoManager: {fileID: 0}
   quackSound: {fileID: 8300000, guid: e7de6c8a322c85748abc5b5abbd7502f, type: 3}
   duckType: 0
+  duckName: 
 --- !u!82 &4774230396815453450
 AudioSource:
   m_ObjectHideFlags: 0
