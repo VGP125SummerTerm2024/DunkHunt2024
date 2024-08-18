@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
         // Set gamemode and get stored high score
         GameMode = 1;
         highScore = PlayerPrefs.GetInt("HighScore", 0);
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     }
 
     // Method to update high score

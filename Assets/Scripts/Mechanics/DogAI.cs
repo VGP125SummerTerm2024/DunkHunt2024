@@ -64,9 +64,9 @@ public class DogAI : MonoBehaviour
         }
 
         // Debug controls for testing
-        if (Input.GetKey(KeyCode.P)) { DogLaugh(); }
-        if (Input.GetKey(KeyCode.O)) { DogHoldDuck(); }
-        if (Input.GetKey(KeyCode.I)) { DogHoldTwoDuck(); }
+        //if (Input.GetKey(KeyCode.P)) { DogLaugh(); }
+        //if (Input.GetKey(KeyCode.O)) { DogHoldDuck(); }
+        //if (Input.GetKey(KeyCode.I)) { DogHoldTwoDuck(); }
     }
 
     public void DogLaugh()
@@ -185,4 +185,31 @@ public class DogAI : MonoBehaviour
             Destroy(collision.gameObject);
         }
     }
+
+    public void MoveToDuckPosition(Vector3 duckPosition)
+    {
+        StartCoroutine(MoveDogToDuckPosition(duckPosition));
+    }
+
+    public IEnumerator MoveDogToDuckPosition(Vector3 duckPosition)
+    {
+        Vector3 startPosition = transform.position;
+
+        // Maintain the dog's original y position
+        Vector3 targetPosition = new Vector3(duckPosition.x, startPosition.y, startPosition.z);
+
+        float moveTime = 0.5f; // Adjust the duration as needed
+        float elapsedTime = 0f;
+
+        while (elapsedTime < moveTime)
+        {
+            transform.position = Vector3.Lerp(startPosition, targetPosition, elapsedTime / moveTime);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        transform.position = targetPosition; // Ensure final position is exactly the target
+        StartCoroutine(MoveUpPauseAndReturn());
+    }
+
 }

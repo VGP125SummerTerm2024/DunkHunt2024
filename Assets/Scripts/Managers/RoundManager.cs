@@ -87,6 +87,7 @@ public class RoundManager : MonoBehaviour
                 missedDucks();
                 AdvanceRound();
                 StartCoroutine(dogDelay("Laugh"));
+                
             }
             // tracks if player clicked and shot a bullet
             if (Input.GetMouseButtonDown(0) && roundPlaying)
@@ -107,6 +108,7 @@ public class RoundManager : MonoBehaviour
 
     IEnumerator dogDelay(string type)
     {
+        DogAIRef.MoveToDuckPosition(transform.position);
         yield return new WaitForSeconds(1.0f);
         if (type == "Laugh")
             DogAIRef.DogLaugh();

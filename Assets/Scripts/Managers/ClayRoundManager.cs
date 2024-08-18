@@ -16,9 +16,10 @@ public class ClayRoundManager : MonoBehaviour
     private bool isRoundActive = false;
     private bool isWaitingForRound = false;
     bool spawning = false;
-
+    public int _roundCount;
     void Start()
     {
+        _roundCount=1;
         StartNewRound();
     }
 
@@ -51,49 +52,66 @@ public class ClayRoundManager : MonoBehaviour
     IEnumerator StartRound()
     {
         isRoundActive = true;
-
         startCanvas.SetActive(false);
         roundIndicator.SetActive(false);
 
         yield return new WaitForSeconds(1f);
 
-            StartCoroutine(targetSpawner.SpawnTargets());
-  
-        if (targetSpawner.spawnedTargets == targetSpawner.maxTargets)
+        StartCoroutine(targetSpawner.SpawnTargets());
+
+        // Wait until all targets are spawned
+        while (targetSpawner.spawnedTargets < targetSpawner.maxTargets)
         {
-            yield return StartCoroutine(NextRound());
+            yield return null;
         }
+
+        // Wait until all targets are hit
+        while (targetSpawner.spawnedTargets > 0)
+        {
+            yield return null;
+        }
+
         isRoundActive = false;
+        StartCoroutine(NextRound());
     }
 
     IEnumerator NextRound()
     {
+        targetSpawner.spawnedTargets = 0;
+        // Wait until all targets are hit
         while (targetSpawner.spawnedTargets > 0)
         {
-            yield return null; // Wait until all targets are hit
+            yield return null;
         }
 
         roundScoreCanvas.SetActive(true);
         HitUI.CheckGameState();
         round++;
+        _roundCount++;
 
-        yield return new WaitForSeconds(1f);
-
-        if (round == 99 )
+        // Check if the game should end
+        if (_roundCount >= 10)
         {
             StartCoroutine(EndGame());
         }
         else
         {
+            yield return new WaitForSeconds(1f);
             roundScoreCanvas.SetActive(false);
             StartNewRound();
         }
     }
+
 
     IEnumerator EndGame()
     {
         gameOverCanvas.SetActive(true);
         yield return new WaitForSeconds(2f);
         gameObject.SetActive(false); // End the game
+    }
+
+    public int getRoundNumber()
+    {
+        return _roundCount;
     }
 }
