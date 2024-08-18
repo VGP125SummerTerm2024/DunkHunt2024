@@ -84,8 +84,8 @@ public class ClayRoundManager : MonoBehaviour
 
         //roundScoreCanvas.SetActive(true);
         HitUI.CheckGameState();
-        round++;
-        ++_roundCount;
+        //round++;
+        //++_roundCount;
 
         // Check if the game should end
         if (_roundCount >= 10)

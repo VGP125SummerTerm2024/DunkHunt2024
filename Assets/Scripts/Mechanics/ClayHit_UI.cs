@@ -81,6 +81,8 @@ public class ClayHit_UI : MonoBehaviour
                 IPMScoreManager.Instance._PerfectScore();
             }
             StartLevel();
+            crm._roundCount++;
+            crm.round++;
             crm.StartNewRound();
         }
         else
