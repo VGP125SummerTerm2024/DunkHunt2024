@@ -30,7 +30,7 @@ public class ClayRoundManager : MonoBehaviour
         
         if (!isRoundActive && !isWaitingForRound && !spawning && !gameover)
         {
-           StartCoroutine(StartRound());
+           //StartCoroutine(StartRound());
         }
     }
 
@@ -65,11 +65,7 @@ public class ClayRoundManager : MonoBehaviour
 
         StartCoroutine(targetSpawner.SpawnTargets());
 
-        // Wait until all targets are spawned
-        while (targetSpawner.spawnedTargets < targetSpawner.maxTargets)
-        {
-            yield return null;
-        }
+       
 
         // Wait until all targets are hit
         while (targetSpawner.spawnedTargets > 0)
@@ -84,13 +80,8 @@ public class ClayRoundManager : MonoBehaviour
     IEnumerator NextRound()
     {
         targetSpawner.spawnedTargets = 0;
-        // Wait until all targets are hit
-        while (targetSpawner.spawnedTargets > 0)
-        {
-            yield return null;
-        }
 
-        roundScoreCanvas.SetActive(true);
+        //roundScoreCanvas.SetActive(true);
         HitUI.CheckGameState();
         round++;
         ++_roundCount;
