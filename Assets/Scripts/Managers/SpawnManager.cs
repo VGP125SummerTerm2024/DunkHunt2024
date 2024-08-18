@@ -23,7 +23,7 @@ public class SpawnManager : MonoBehaviour
 
         // update the round manager and give it the duck and ducks name
         Duck2.GetComponent<DuckScript>().duckName = "Duck2";
-        Duck2.GetComponent<DuckScript>().speedMult = rm.duckSpeedMult;
+        Duck2.GetComponent<DuckScript>().updateSpeed(rm.duckSpeedMult);
         rm.ducks++; ;
         rm.duckObj.Add(Duck2.GetComponent<DuckScript>().duckName, Duck2);
 
@@ -75,7 +75,7 @@ public class SpawnManager : MonoBehaviour
         if (rm.firstRound)
             rm.firstRound = false;
         Duck1.GetComponent<DuckScript>().duckName = "Duck1";
-        Duck1.GetComponent<DuckScript>().speedMult = rm.duckSpeedMult;
+        Duck1.GetComponent<DuckScript>().updateSpeed(rm.duckSpeedMult);
         rm.ducks++;
         rm.duckObj.Add(Duck1.GetComponent<DuckScript>().duckName, Duck1);
 

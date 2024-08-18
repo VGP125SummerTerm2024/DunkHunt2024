@@ -40,6 +40,8 @@ public class RoundManager : MonoBehaviour
     [SerializeField]public Dictionary<string, GameObject> duckObj = new Dictionary<string, GameObject>();
     public float duckSpeedMult;
 
+    private float lastDuckX;
+
     
 
     // Start is called before the first frame update
@@ -108,12 +110,24 @@ public class RoundManager : MonoBehaviour
 
     IEnumerator dogDelay(string type)
     {
-        DogAIRef.MoveToDuckPosition(transform.position);
-        yield return new WaitForSeconds(1.0f);
         if (type == "Laugh")
+        {
+            yield return new WaitForSeconds(1.0f);
+            DogAIRef.dog.transform.position = new Vector3(transform.position.x, DogAIRef.dog.transform.position.y + 0.25f, DogAIRef.dog.transform.position.z);
             DogAIRef.DogLaugh();
-        else if (type == "HoldDuck")
+        }
+        else if (type == "HoldDuck" && GameManager.Instance.GameMode == 1)
+        {     
+            yield return new WaitForSeconds(1.0f);
+            DogAIRef.dog.transform.position = new Vector3(lastDuckX, DogAIRef.dog.transform.position.y + 0.25f, DogAIRef.dog.transform.position.z);
             DogAIRef.DogHoldDuck();
+        }
+        else if (type == "HoldDuck" && GameManager.Instance.GameMode == 2)
+        {
+            yield return new WaitForSeconds(1.0f);
+            DogAIRef.dog.transform.position = new Vector3(lastDuckX, DogAIRef.dog.transform.position.y + 0.25f, DogAIRef.dog.transform.position.z);
+            DogAIRef.DogHoldTwoDuck();
+        }
     }
     
     private void AdvanceRound()
@@ -159,6 +173,7 @@ public class RoundManager : MonoBehaviour
     public void onDuckDestroy(GameObject duck)
     {
         ducks--;
+        lastDuckX = duck.transform.position.x;
         duckObj.Remove(duck.GetComponent<DuckScript>().duckName);
     }
 
@@ -202,9 +217,9 @@ public class RoundManager : MonoBehaviour
     void setSpeedMult()
     {
         if (_roundCount <= 8)
-            duckSpeedMult = 1 + (_roundCount / 8);
+            duckSpeedMult = 1 + ((float)_roundCount / 8);
         else if (_roundCount <= 12)
-            duckSpeedMult = 2 + ((_roundCount % 8) / 4);
+            duckSpeedMult = 2 + (((float)_roundCount % 8) / 4);
         else
             duckSpeedMult = 3;
     }
