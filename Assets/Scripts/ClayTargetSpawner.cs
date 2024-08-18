@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
+
 public class ClayTargetSpawner : MonoBehaviour
 {
     public GameObject clayTargetPrefab; // The prefab of the clay target
@@ -18,6 +19,7 @@ public class ClayTargetSpawner : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip spawnClip;
     public AmmoManager ammoManager;
+    public ClayRoundManager roundManager;
    
 
     private void Start()
@@ -27,7 +29,7 @@ public class ClayTargetSpawner : MonoBehaviour
 
     public IEnumerator SpawnTargets()
     {
-        while (spawnedTargets < 2)
+        while (spawnedTargets < 10)
         {
             // Spawn the first target
             SpawnClayTarget();
@@ -46,6 +48,7 @@ public class ClayTargetSpawner : MonoBehaviour
 
             ammoManager.reload();
         }
+
     }
 
     void SpawnClayTarget()

@@ -83,7 +83,7 @@ public class ClayTarget : MonoBehaviour
         {
             Destroy(gameObject);
             ClayTargetSpawner claySpawn = FindAnyObjectByType<ClayTargetSpawner>();
-            claySpawn.spawnedTargets--;
+            //claySpawn.spawnedTargets--;
         }
     }
 
