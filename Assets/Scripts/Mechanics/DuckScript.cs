@@ -4,14 +4,14 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-[RequireComponent(typeof(Rigidbody2D),typeof(BoxCollider2D), typeof(SpriteRenderer))]
-
+[RequireComponent(typeof(Rigidbody2D), typeof(BoxCollider2D), typeof(SpriteRenderer))]
 public class DuckScript : MonoBehaviour
 {
     Rigidbody2D rb;
     SpriteRenderer sr;
     Animator animator;
     AudioSource audioSource;
+    Collider2D collider2D;
 
     [SerializeField] float baseSpeed = 5f;
 
@@ -37,9 +37,19 @@ public class DuckScript : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        ammoManager = FindObjectOfType<AmmoManager>();
         audioSource = GetComponent<AudioSource>();
+        collider2D = GetComponent<Collider2D>();  // Cache Collider2D
+        ammoManager = FindObjectOfType<AmmoManager>();
 
+        // Initialize duck type
+        DetermineDuckType();
+
+        // Initialize movement
+        InitializeMovement();
+    }
+
+    void DetermineDuckType()
+    {
         if (sr.sprite.name == "Duck_Green_FlyDiagonal1")
         {
             duckType = 1;
@@ -52,7 +62,10 @@ public class DuckScript : MonoBehaviour
         {
             duckType = 3;
         }
+    }
 
+    void InitializeMovement()
+    {
         int leftRight;
         float verticalMovement;
         float horizontalMovement;
@@ -65,7 +78,7 @@ public class DuckScript : MonoBehaviour
             leftRight = 1;
         }
 
-        if (Random.Range(0,2) == 0)
+        if (Random.Range(0, 2) == 0)
         {
             animator.SetBool("Flip", true);
             verticalMovement = .4f;
@@ -76,23 +89,26 @@ public class DuckScript : MonoBehaviour
             verticalMovement = .6f;
             horizontalMovement = .4f;
         }
+
         speedMult = 1;
-        //Later multiply by round multiplier
         speed = baseSpeed * speedMult;
 
         moveDirection = new Vector2(horizontalMovement, verticalMovement);
         moveDirection.x *= leftRight;
     }
 
+    void FixedUpdate()
+    {
+        rb.velocity = moveDirection * speed;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        rb.velocity = moveDirection * speed * Time.deltaTime;
-
         if (Input.GetMouseButtonDown(0))
         {
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            if (GetComponent<Collider2D>().OverlapPoint(mousePosition) && !isDead && !missed)
+            if (collider2D.OverlapPoint(mousePosition) && !isDead && !missed)
             {
                 rb.gravityScale = 0;
                 rb.gameObject.layer = LayerMask.NameToLayer("DeadDuck");
@@ -145,7 +161,7 @@ public class DuckScript : MonoBehaviour
                 moveDirection.y = temp * -1;
             }
         }
-        
+
         // flips entire movement
         if (rNum == 1)
         {
@@ -220,7 +236,8 @@ public class DuckScript : MonoBehaviour
 
     private void PlaySoundOnce(AudioClip clip)
     {
-        audioSource.Stop();
+        if (audioSource.isPlaying && audioSource.clip == clip)
+            return;
         audioSource.clip = clip;
         audioSource.Play();
     }
