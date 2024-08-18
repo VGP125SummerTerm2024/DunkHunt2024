@@ -15,6 +15,7 @@ public class ClayTargetSpawner : MonoBehaviour
     public float maxDelayBetweenTargets = 1.5f; // Maximum delay between the two targets
 
     public  int spawnedTargets = 0; // Counter to keep track of the number of spawned targets
+    public bool isSpawning = false;
 
     public AudioSource audioSource;
     public AudioClip spawnClip;
@@ -31,6 +32,8 @@ public class ClayTargetSpawner : MonoBehaviour
     {
         while (spawnedTargets < 10)
         {
+            isSpawning = true;
+
             // Spawn the first target
             SpawnClayTarget();
             spawnedTargets++;

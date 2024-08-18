@@ -13,6 +13,7 @@ public class ClayRoundManager : MonoBehaviour
     public GameObject gameOverCanvas;
     public GameObject roundScoreCanvas;
     public int round;
+    
 
     private bool isRoundActive = false;
     private bool isWaitingForRound = false;
@@ -63,7 +64,7 @@ public class ClayRoundManager : MonoBehaviour
 
         yield return new WaitForSeconds(3f);
 
-        StartCoroutine(targetSpawner.SpawnTargets());
+        if (targetSpawner.isSpawning == false) StartCoroutine(targetSpawner.SpawnTargets());
 
        
 
@@ -94,7 +95,7 @@ public class ClayRoundManager : MonoBehaviour
         else
         {
             yield return new WaitForSeconds(1f);
-            roundScoreCanvas.SetActive(false);
+            //roundScoreCanvas.SetActive(false);
             //StartNewRound();
         }
         

@@ -1045,6 +1045,7 @@ MonoBehaviour:
   minDelayBetweenTargets: 0.5
   maxDelayBetweenTargets: 1.5
   spawnedTargets: 0
+  isSpawning: 0
   audioSource: {fileID: 1957525721}
   spawnClip: {fileID: 8300000, guid: 311d9d69b5a4bfd4886a7685d6bb7c71, type: 3}
   ammoManager: {fileID: 1473633447}
@@ -1202,13 +1203,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ammoManager: {fileID: 1473633447}
   targetSpawner: {fileID: 1202985796}
-  HitUI: {fileID: 0}
+  HitUI: {fileID: 2000800162}
   startCanvas: {fileID: 638304233}
   roundIndicator: {fileID: 233018248}
   gameOverCanvas: {fileID: 530174552}
   roundScoreCanvas: {fileID: 0}
   round: 0
   _roundCount: 0
+  gameover: 0
 --- !u!1 &1757718116
 GameObject:
   m_ObjectHideFlags: 0
