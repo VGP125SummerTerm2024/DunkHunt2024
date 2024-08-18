@@ -108,7 +108,7 @@ public class ClayTarget : MonoBehaviour
             IPMScoreManager.Instance._BlueDuck();
         }
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0f);
         direction = new Vector2(0, -1); // Make the clay target fall down
         IPMScoreManager.Instance.ScoreSpawn(transform.position, clayType);
         Destroy(gameObject);
