@@ -16,7 +16,7 @@ public class ClayTarget : MonoBehaviour
     public bool isDead = false;
     public AmmoManager ammoManager;
     private Animator animator;
-    public int clayType = 1;
+    public int clayType = 2;
 
     public AudioSource audioSource;
     public AudioClip flyClip;
@@ -103,16 +103,17 @@ public class ClayTarget : MonoBehaviour
         ClayTargetSpawner claySpawn = FindAnyObjectByType<ClayTargetSpawner>(); 
         claySpawn.spawnedTargets--;
 
-        if (clayType == 1)
+        if (clayType == 2)
         {
             IPMScoreManager.Instance._BlueDuck();
         }
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0f);
         direction = new Vector2(0, -1); // Make the clay target fall down
-        Destroy(gameObject);
-
         IPMScoreManager.Instance.ScoreSpawn(transform.position, clayType);
+        Destroy(gameObject);
+        
+        
 
     }
 
