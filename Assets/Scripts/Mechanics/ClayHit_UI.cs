@@ -15,6 +15,7 @@ public class ClayHit_UI : MonoBehaviour
     public GameObject[] duckImages; // Array of duck images
     public Slider ducksToHitSlider; // Reference to the Slider component
 
+    RoundUI RoundUI;
     ClayRoundManager crm; 
     void Start()
     {
@@ -25,7 +26,9 @@ public class ClayHit_UI : MonoBehaviour
         ducksProcessed = 0; // Initialize counter
         Debug.Log("Welcome to Duck Hunt!");
         crm = FindAnyObjectByType<ClayRoundManager>();
+        RoundUI = FindAnyObjectByType<RoundUI>();
         StartLevel();
+        
         
     }
 
@@ -83,7 +86,9 @@ public class ClayHit_UI : MonoBehaviour
             StartLevel();
             crm._roundCount++;
             crm.round++;
+            RoundUI.IncrementRound();
             crm.StartNewRound();
+            
         }
         else
         {

@@ -355,13 +355,37 @@ MonoBehaviour:
   - {fileID: -1618484355, guid: 93905210700021e41bbc5bd374f4d5e1, type: 3}
   - {fileID: -320730179, guid: 93905210700021e41bbc5bd374f4d5e1, type: 3}
   rm: {fileID: 1738860763}
-
---- !u!1 &349791298 stripped
+--- !u!1 &349791298
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3373773026290360651, guid: 7aa850db4f9cb4a4bbce05408ab4b8ae, type: 3}
-
-  m_PrefabInstance: {fileID: 1091780836763715205}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 349791299}
+  m_Layer: 0
+  m_Name: 
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &349791299
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349791298}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &442836978
 GameObject:
   m_ObjectHideFlags: 0
@@ -972,6 +996,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1560424815125776944, guid: 7aa850db4f9cb4a4bbce05408ab4b8ae, type: 3}
   m_PrefabInstance: {fileID: 1091780836763715205}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1090536924 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3373773026290360651, guid: 7aa850db4f9cb4a4bbce05408ab4b8ae, type: 3}
+  m_PrefabInstance: {fileID: 1091780836763715205}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1135788280
 GameObject:
   m_ObjectHideFlags: 0
@@ -1283,9 +1312,7 @@ MonoBehaviour:
   HitUI: {fileID: 2000800162}
   startCanvas: {fileID: 638304233}
   roundIndicator: {fileID: 233018248}
-
   gameOverCanvas: {fileID: 530174552}
-
   roundScoreCanvas: {fileID: 0}
   round: 0
   _roundCount: 0
@@ -1519,7 +1546,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1280255971}
-  - {fileID: 397735481}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1736,7 +1762,7 @@ MonoBehaviour:
   duckImages:
   - {fileID: 919423920}
   - {fileID: 1071556018}
-  - {fileID: 349791298}
+  - {fileID: 1090536924}
   - {fileID: 1246501975}
   - {fileID: 469934858}
   - {fileID: 223665940}
@@ -2478,6 +2504,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 349791299}
   - {fileID: 1957525720}
   - {fileID: 879046524}
   - {fileID: 1202985797}
@@ -2491,7 +2518,6 @@ SceneRoots:
   - {fileID: 195150484}
   - {fileID: 638304237}
   - {fileID: 1443478833}
-
   - {fileID: 167284477}
   - {fileID: 530174554}
-
+  - {fileID: 1888846741}
