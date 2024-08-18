@@ -202,9 +202,9 @@ public class RoundManager : MonoBehaviour
     void setSpeedMult()
     {
         if (_roundCount <= 8)
-            duckSpeedMult = 1 + (_roundCount / 8);
+            duckSpeedMult = 1 + ((float)_roundCount / 8);
         else if (_roundCount <= 12)
-            duckSpeedMult = 2 + ((_roundCount % 8) / 4);
+            duckSpeedMult = 2 + (((float)_roundCount % 8) / 4);
         else
             duckSpeedMult = 3;
     }
