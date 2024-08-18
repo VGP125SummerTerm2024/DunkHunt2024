@@ -18,8 +18,8 @@ public class DuckScript : MonoBehaviour
     bool isDead = false;
     bool missed = false;
 
-    public float speed;
-    public float speedMult;
+    [SerializeField]float speed;
+    float speedMult;
 
     public bool isDodgey;
 
@@ -90,7 +90,6 @@ public class DuckScript : MonoBehaviour
             horizontalMovement = .4f;
         }
 
-        speedMult = 1;
         speed = baseSpeed * speedMult;
 
         moveDirection = new Vector2(horizontalMovement, verticalMovement);
