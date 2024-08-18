@@ -109,7 +109,7 @@ MonoBehaviour:
   maxScale: 1
   isDead: 0
   ammoManager: {fileID: 0}
-  clayType: 1
+  clayType: 2
   audioSource: {fileID: 957850281221268718}
   flyClip: {fileID: 8300000, guid: 3e6982b6c4521a44abe610007d536c77, type: 3}
   DuckHitUI: {fileID: 0}
