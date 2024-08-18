@@ -21,14 +21,14 @@ public class ClayTarget : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip flyClip;
 
-    public DuckHit DuckHitUI;
+    public ClayHit_UI DuckHitUI;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>(); // Ensure the Animator is referenced
         ammoManager = FindObjectOfType<AmmoManager>();
-        DuckHitUI = FindObjectOfType<DuckHit>();
+        DuckHitUI = FindObjectOfType<ClayHit_UI>();
         if (ammoManager == null)
         {
             Debug.LogError("AmmoManager not found in the scene!");

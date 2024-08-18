@@ -1,11 +1,12 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ClayRoundManager : MonoBehaviour
 {
     public AmmoManager ammoManager;
     public ClayTargetSpawner targetSpawner;
-    public DuckHit HitUI;
+    public ClayHit_UI HitUI;
 
     public GameObject startCanvas;
     public GameObject roundIndicator;
@@ -17,6 +18,7 @@ public class ClayRoundManager : MonoBehaviour
     private bool isWaitingForRound = false;
     bool spawning = false;
     public int _roundCount;
+    public bool gameover = false;
     void Start()
     {
         _roundCount=1;
@@ -26,24 +28,28 @@ public class ClayRoundManager : MonoBehaviour
     void Update()
     {
         
-        if (!isRoundActive && !isWaitingForRound && !spawning )
+        if (!isRoundActive && !isWaitingForRound && !spawning && !gameover)
         {
-           // StartCoroutine(StartRound());
+           StartCoroutine(StartRound());
         }
     }
 
-    void StartNewRound()
+    public void StartNewRound()
     {
+        Debug.Log("Starting New Round");
         startCanvas.SetActive(true);
         roundIndicator.SetActive(true);
+        roundIndicator.GetComponent<ClayRoundInd>().display();
         isWaitingForRound = true;
 
+        if (gameover)
+            return;
         StartCoroutine(WaitForRound());
     }
 
     IEnumerator WaitForRound()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(4f);
         isWaitingForRound = false;
 
         StartCoroutine(StartRound());
@@ -55,7 +61,7 @@ public class ClayRoundManager : MonoBehaviour
         startCanvas.SetActive(false);
         roundIndicator.SetActive(false);
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(3f);
 
         StartCoroutine(targetSpawner.SpawnTargets());
 
@@ -87,27 +93,31 @@ public class ClayRoundManager : MonoBehaviour
         roundScoreCanvas.SetActive(true);
         HitUI.CheckGameState();
         round++;
-        _roundCount++;
+        ++_roundCount;
 
         // Check if the game should end
         if (_roundCount >= 10)
         {
-            StartCoroutine(EndGame());
+            gameOver();
         }
         else
         {
             yield return new WaitForSeconds(1f);
             roundScoreCanvas.SetActive(false);
-            StartNewRound();
+            //StartNewRound();
         }
+        
     }
 
-
+    public void gameOver()
+    {
+        StartCoroutine(EndGame());
+    }
     IEnumerator EndGame()
     {
         gameOverCanvas.SetActive(true);
-        yield return new WaitForSeconds(2f);
-        gameObject.SetActive(false); // End the game
+        yield return new WaitForSeconds(6);
+        SceneManager.LoadScene("IPM Main Menu");
     }
 
     public int getRoundNumber()
