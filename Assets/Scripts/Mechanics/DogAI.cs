@@ -137,10 +137,12 @@ public class DogAI : MonoBehaviour
         rb.velocity = Vector2.zero;
 
         // Pause at the peak
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(.5f);
 
         // Apply downward force
-        rb.gravityScale = 0.1f;
+        rb.gravityScale = 2.5f;
+
+        yield return new WaitForSeconds(1.0f);
 
         // Wait until the dog lands
         while (!IsGrounded())
@@ -152,7 +154,7 @@ public class DogAI : MonoBehaviour
         // anim.SetTrigger("HoldDuck") change name to trigger name (or idle?)
         rb.gravityScale = initialGravityScale;
         rb.velocity = Vector2.zero;
-        transform.position = originalPosition;
+        transform.position = new Vector3(originalPosition.x, originalPosition.y - 0.2f, originalPosition.z);
     }
 
     private bool IsGrounded()
